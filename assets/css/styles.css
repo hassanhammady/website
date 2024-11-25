@@ -1,0 +1,691 @@
+body {
+    background-color:#F8F8F8
+}
+.top_header .btn-danger {
+    background-color: #F16126;
+} 
+.top_header input.form-control {
+    background: #E7E5E5;
+} 
+.top_header input.form-control::placeholder {
+    color:#575753;
+    opacity: 50%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+} 
+.navbar {
+    background: #fff;
+}
+/* Header and NavBar Styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav .nav-link {
+    color: #000 !important; /* Black text color for the nav tabs */
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+.navbar .nav-item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.navbar .nav-item:hover .nav-link {
+    color: #ffa500 !important; /* Hover effect */
+}
+.social-icons i {
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-link.shopping {
+    font-size: 20px;
+}
+.contact-info {
+    color: white;
+    font-size: 22px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.flag-icon {
+    margin-right: 10px;
+}
+.search-bar {
+    margin-right: 20px;
+}
+.navbar-nav {
+    background-color: #fff; /* White background for nav tabs */
+    width: 100%;
+    justify-content: center;
+}
+.navbar-toggler {
+    border-color: white;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+/* Carousel Styles */
+.slider_header_text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #000000;
+}
+.slider_describtion_text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 62px;
+    color: #1176AE;
+}
+.splide__arrow {
+    align-items: center;
+    background: #F16126;
+}
+.splide__arrow svg {
+   fill: #fff!important; 
+}
+.splide__pagination__page {
+    width: 40px;
+    height: 4px;
+    margin:8px;
+    border-radius: 0;
+    background: #fff;
+}
+.splide__pagination__page.is-active {
+    background: #fff;
+    transform: scale(1.2);
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .contact-info {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Categories Section Styles */
+.section_header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #000;
+}
+
+/* Mobile Collection Section Styles */
+.mobile_collections .wrapper {
+    border:1px solid #E6E6E6;
+    background: #fff;
+    border-radius: 10px;
+}
+.mobile_collections .header-text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #000;
+}
+.mobile_collections .link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1176AE;
+}
+.mobile_collections .bi-heart {
+    color: #FF0000;
+}
+.mobile_collections .bi-heart:hover {
+    cursor: pointer;
+}
+.mobile_collections .splide__arrow--prev {
+    left:91%;
+}
+.mobile_collections .splide__pagination__page {
+    display: none;
+}
+.mobile_collections .splide__slide {
+    border:1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mobile_collections .splide__arrow {
+    top:-7%;
+}
+.mobile_collections .splide__arrow {
+    align-items: center;
+    background: unset;
+}
+.mobile_collections .splide__arrow svg {
+    fill: #000!important; 
+    height: .7em;
+    width: .7em;
+}
+.mobile_collections .background_paragraph {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    opacity:50%;
+}
+.mobile_collections .background_header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+    color: #1176AE;
+}
+.mobile_collections .btn-danger {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: unset;
+    border-radius: 5px;
+    background-color: #F16126;
+}
+.mobile_collections .product_name {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    opacity:50%;
+}
+.mobile_collections .product_description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+}
+.mobile_collections .product_new_price {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #1176AE;
+}
+.mobile_collections .product_old_price {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    border: unset;
+    border-radius: 0px;
+    color: #000;
+    opacity:50%;
+}
+.mobile_collections i {
+    color: #1176AE;
+}
+
+/* Mobile Accessories Section Styles */
+
+.mobile_accessories .wrapper {
+    border:1px solid #E6E6E6;
+    background: #fff;
+    border-radius: 10px;
+}
+.mobile_accessories .header-text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #000;
+}
+.mobile_accessories .link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #1176AE;
+}
+.mobile_accessories .bi-heart {
+    color: #FF0000;
+}
+.mobile_accessories .bi-heart:hover {
+    cursor: pointer;
+}
+.mobile_accessories .splide__pagination__page {
+    display: none;
+}
+.mobile_accessories .splide__slide {
+    border:1px solid #E6E6E6;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mobile_accessories .splide__arrow--prev {
+    left:91%;
+}
+.mobile_accessories .splide__arrow {
+    top:-7%;
+}
+.mobile_accessories .splide__arrow {
+    align-items: center;
+    background: unset;
+}
+.mobile_accessories .splide__arrow svg {
+    fill: #000!important; 
+    height: .7em;
+    width: .7em;
+}
+.mobile_accessories .background_paragraph {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    opacity:50%;
+}
+.mobile_accessories .background_header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: none;
+    color: #1176AE;
+}
+.mobile_accessories .btn-danger {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: unset;
+    border-radius: 5px;
+    background-color: #F16126;
+}
+.mobile_accessories .product_name {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    opacity:50%;
+}
+.mobile_accessories .product_description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+}
+.mobile_accessories .product_new_price {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: #1176AE;
+}
+.mobile_accessories .product_old_price {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    border: unset;
+    border-radius: 0px;
+    color: #000;
+    opacity:50%;
+}
+.mobile_accessories i {
+    color: #1176AE;
+}
+/** Airpods pro */
+.airpods_pro .title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000000;
+    opacity: 50%;
+}
+.airpods_pro_wrapper {
+    background:url(../../assets/imgs/airpods_pro_bg.png);
+    background-size:cover;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.airpods_pro .description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #1176AE;
+}
+.airpods_pro .btn-danger {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: unset;
+    border-radius: 5px;
+    background-color: #F16126;
+}
+.airpods_pro .white_area {
+    top: 60px;
+    left:11%;
+    z-index:0;
+    height:75%;
+    background:#fff
+}
+.airpods_pro .mobile_airpods_img_container {
+    margin-left: 200px
+}
+
+/* PC Section Styles */
+.pc-section {
+    background: url('../../assets/imgs/desktop_pc.png') no-repeat center center, #ebebeb;
+}
+.pc-section .background_paragraph {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #000000;
+    opacity: 50%;
+}
+.pc-section .background_header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #1176AE;
+
+}
+.pc-section .btn-danger {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    border: unset;
+    border-radius: 5px;
+    background-color: #F16126;
+}
+/* Brands Section styles */
+.brands {
+    background: #fff;
+}
+.brands .section_title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: #000;
+}
+.brands .splide__arrow.splide__arrow--prev,
+.brands .splide__arrow.splide__arrow--next {
+    display: none;
+}
+/* Benefits Section  */
+.benefits .title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #000;
+}
+.benefits .description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+/* Footer */
+footer.top_section {
+    background: #181818;
+}
+footer .nav-item .nav-link {
+    color: #BEBEBE!important;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+footer h5 {
+    line-height: 3;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+footer .btn-danger {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    border: unset;
+    border-radius: 5px;
+    background-color: #F16126;
+}
+footer form input::placeholder {
+    font-size: 12px;
+    color: #5B7BB0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+footer form p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Bottom Section */
+.bottom_section {
+    background: #222222;
+}
+.bottom_section p {
+    color: #ABABAB;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/*** Responsive Media Quires ***/
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .contact-info {
+        font-size: 20px;
+    }
+    .header_carousel .splide__slide img {
+        min-height: 500px;
+        object-fit: cover;
+    }
+    .section_header,
+    .mobile_collections .header-text,
+    .mobile_accessories .header-text,
+    .brands .section_title,
+    .mobile_collections .background_header, 
+    .mobile_accessories .background_header,
+    .pc-section .background_header {
+        font-size: 28px;
+    }
+    .mobile_accessories .link,
+    .mobile_collections .link {
+        font-size: 14px;
+    }
+    .mobile_collections .splide__arrow,
+    .mobile_accessories .splide__arrow {
+        top: -6%;
+    }
+    .mobile_collections .product_description,
+    .mobile_accessories .product_description {
+        font-size: 13px;
+    }
+    .mobile_collections .product_new_price,
+    .mobile_accessories .product_new_price {
+        font-size: 12px;
+    }
+    .mobile_collections .product_old_price,
+    .mobile_accessories .product_old_price {
+        font-size: 8px;
+    }
+    .airpods_pro .description {
+        font-size: 26px;
+    }
+    .airpods_pro .title {
+        font-size: 14px;
+    }
+    .airpods_pro .btn-danger {
+        font-size: 14px;
+    }
+    .airpods_pro .white_area {
+        top: 25px;
+        left: 12%;
+    }
+    .benefits .title {
+        font-size: 18px;
+    }
+    .benefits .description {
+        font-size: 12px;
+    }
+    footer .nav-item .nav-link {
+        font-size: 12px;
+    }
+    footer .btn-danger {
+        font-size: 11px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer form p {
+        font-size: 12px;
+    }
+    footer h5 {
+        font-size: 14px;
+    }
+}
+@media (max-width:992px) {
+    .offer {
+        min-height: 400px;
+    }
+    .white_area {
+        position: unset!important;
+    }
+    .mobile_collections .header-text, 
+    .mobile_accessories .header-text {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .airpods_pro_wrapper {
+        background-size: 100% 100%;
+    }
+    .mobile_collections .btn-danger,
+    .mobile_accessories .btn-danger {
+        width: 100%!important;
+    }
+    .mobile_accessories .splide__arrow--prev {
+        left: 83%;
+    }
+    .mobile_collections .splide__arrow--prev {
+        left: 83%;
+    }
+    .mobile_collections .splide__arrow, .mobile_accessories .splide__arrow {
+        top:-5%;
+    }
+    .airpods_pro_wrapper {
+        min-height: 300px;
+    }
+    .airpods_pro .mobile_airpods_img_container {
+        margin-left: -64px;
+    }
+}
+@media (max-width:768px) {
+    .slider_header_text {
+        font-size: 18px;
+    }
+    .slider_describtion_text {
+        font-size: 24px;
+    }
+    .header_carousel .splide__slide img {
+        min-height: 350px;
+        object-fit: cover;
+    }
+    .offer {
+        min-height: 400px;
+    }
+    .white_area {
+        position: unset!important;
+    }
+    .mobile_collections .background_header,
+    .mobile_accessories .background_header {
+        font-size: 22px;
+    }
+    .mobile_collections .btn-danger,
+    .mobile_accessories .btn-danger {
+        width: 100%!important;
+    }
+    .mobile_collections .header-text, 
+    .mobile_accessories .header-text {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .airpods_pro_wrapper {
+        background-size: 100% 100%;
+    }
+    .mobile_accessories .splide__arrow--prev {
+        left: 84%;
+    }
+    .mobile_collections .splide__arrow--prev {
+        left: 84%;
+    }
+    .mobile_collections .splide__arrow, .mobile_accessories .splide__arrow {
+        top: -4%;
+    }
+    .airpods_pro_wrapper {
+        min-height: 300px;
+    }
+}
+@media (max-width: 520px) {
+    .slider_header_text {
+        font-size: 14px;
+    }
+    .slider_describtion_text {
+        font-size: 24px;
+    }
+    .header_carousel .splide__slide img {
+        min-height: 250px;
+        object-fit: cover;
+    }
+    .mobile_collections .header-text, .mobile_accessories .header-text {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .mobile_accessories .splide__arrow--prev {
+        left: 80%;
+    }
+    .mobile_collections .splide__arrow--prev {
+        left: 80%;
+    }
+    .mobile_collections .splide__arrow, .mobile_accessories .splide__arrow {
+        top: -4%;
+    }
+    .airpods_pro_wrapper {
+        min-height: unset;
+    }
+}
