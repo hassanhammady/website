@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmignac Onboarding Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">  
+    <style>
+      /* Global styles */
+        body {
+          font-family: "Rubik", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: normal;
+          font-style: normal;
+          background-color: #fff;
+          margin: 0;
+          padding: 0;
+        }
+
+
+        .navbar-custom {
+/*          background: url('bg 1.png') no-repeat center center;*/
+/*          background: url('https://carmignac.imgix.net/uploads/NextImage/0001/26/d433e2109942868faa75349e03899579bfad1000.jpg?auto=format%2Ccompress&crop=faces&fit=crop&w=1920&h=806') no-repeat center center;*/
+          background: #0d1b14;
+          background-size: cover;
+          color: #000;
+          padding: 10px 20px;
+          min-height: 100px;
+          align-items: center;
+        }
+        .brand-name {
+          font-size: 32px;
+          font-weight: 500;
+          margin-right: 10px;
+          color: #fff;
+        }
+/*        .brand-tagline {
+          background-color: #f9f871;
+          padding: 2px 8px;
+          border-radius: 3px;
+          font-size: 14px;
+          font-weight: 500;
+        }
+*/        .saved-text {
+          font-size: 14px;
+          margin-right: 15px;
+          color: #fff;
+        }
+        .saved-text b {
+          font-weight: 600;
+        }
+        nav .bi {
+            font-size: 16px;
+        }
+
+        .btn-custom {
+          border: 1px solid #000;
+          background: #fff;
+          color: #000;
+          font-size: 14px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        .btn-custom:hover {
+          background: #f0f0f0;
+        }
+        .user-name {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: #fff;
+        }
+        @media (max-width: 767px) {
+          .navbar-custom {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .right-section {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+          }
+          .saved-text {
+            margin: 5px 0;
+            font-size: 14px;
+          }
+        }
+        .invalid {
+			border-color :red1important;
+			box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25)!important;
+        }
+        .header_text {
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .stepper {
+          margin-top: 2rem;
+          position: relative;
+        }
+
+        .stepper .step {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1.5rem;
+          position: relative;
+        }
+
+        .stepper .step:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          left: 19px;
+          top: 24px;
+          width: 2px;
+          height: calc(100% + 20px);
+          background-color: #000;
+        }
+
+        .stepper .step-icon i { 
+            height: 20px;
+            width: 20px;
+        }
+
+        .stepper .step-icon {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 2px solid #000;
+          background-color: #fff;
+          margin-right: 0.75rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1;
+          transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .stepper .step-icon.active {
+          background-color: #537459;
+          color: #fff;
+        }
+
+        .stepper .step-label {
+          font-weight: 500;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+        }
+        .stepper .step.current {
+          background-color: #537459;
+          border-radius: 5px;
+          color: #fff;
+        }
+    /*
+        .stepper .step.current .step-icon {
+          background-color: #537459;
+          border-color: #537459;
+        }
+
+        .stepper .step.current .step-label {
+          background-color: #537459;
+        }
+    */
+        .form-section {
+          margin-top: 2rem;
+        }
+
+        .investor-type button {
+          width: 100%;
+          border: 1px solid #ccc;
+          padding: 1rem;
+          text-align: left;
+          margin-bottom: 1rem;
+          background-color: #fff;
+          border-radius: 0.5rem;
+        }
+
+        .investor-type .active {
+          border: 2px solid #a3ad3c;
+          background-color: #f9fbe9;
+        }
+
+        .btn-continue {
+          background-color: #537459;
+          color: #fff;
+          font-weight: bold;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 0.25rem;
+        }
+        .btn-submit {
+          background-color: #537459;
+          color: #fff;
+          font-weight: bold;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 0.25rem;
+        }
+
+        .btn-back {
+          color: #000;
+          margin-right: 1rem;
+          left: 35%;
+          top: 10px;
+          font-weight: 500;
+          font-size: 20px;
+        }
+
+        .offcanvas.offcanvas-end {
+        	width: 600px;
+        }
+        /* Custom Help Button Styling */
+        .help-button {
+            display: flex; /* Use flexbox for icon and text alignment */
+            align-items: center; /* Vertically center items */
+            gap: 0.5rem; /* Space between icon and text */
+            padding: 0.75rem 1.5rem; /* Padding inside the button */
+            border: 2px solid #537459; /* Green border */
+            border-radius: 2rem; /* Highly rounded corners */
+            background-color: #fff; /* White background */
+            cursor: pointer; /* Indicate it's clickable */
+            font-size: 1.25rem; /* Larger font size for text */
+            font-weight: bold; /* Bold text */
+            color: #212529; /* Dark text color */
+            text-decoration: none; /* Ensure no underline if it's an anchor */
+            transition: background-color 0.2s, border-color 0.2s; /* Smooth transition on hover */
+            margin-top: 2rem; /* Space above the button */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+        }
+
+        .help-button:hover {
+            background-color: #e6ffe6; /* Light green background on hover */
+            border-color: #218838; /* Slightly darker green border on hover */
+        }
+
+        .help-button .i {
+            color: #537459;
+        }
+
+        /**** page 1 General Information ***/
+
+        .general .radio-card {
+            border: 1px solid #dee2e6; /* Light grey border */
+            border-radius: 0.5rem; /* Rounded corners */
+            padding: 1rem;
+            width: 60%;
+            margin:auto;
+            margin-bottom: 1rem; /* Spacing between cards */
+            cursor: pointer;
+            transition: all 0.2s ease-in-out; /* Smooth transition for hover/active states */
+            background-color: #fff; /* White background */
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+        }
+
+        .general .radio-card:hover {
+            border-color: #537459; /* Blue border on hover */
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Slightly larger shadow on hover */
+        }
+
+        .general .radio-card.selected {
+            border-color: #537459; /* Blue border when selected */
+            box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25); /* Blue glow when selected */
+        }
+
+        .general .radio-card input[type="radio"] {
+            margin-right: 0.75rem; /* Spacing between radio button and label */
+            flex-shrink: 0; /* Prevent radio button from shrinking */
+        }
+	    .general .radio-card input[type="radio"]:checked {
+	      background-color: #537459;
+	      border-color: #537459;
+	    }
+
+
+        /* Hide default Bootstrap radio button focus outline */
+        .general .form-check-input:focus {
+            box-shadow: none;
+        }
+
+        /* Adjust the size of the radio button */
+        .general .form-check-input {
+            width: 1.25em; /* Larger radio button */
+            height: 1.25em;
+        }
+
+        /* Style the radio button dot when checked */
+        .general .form-check-input:checked {
+            background-color: #537459;
+            border-color: #537459;
+        }
+
+        .general .form-check-label {
+            margin-bottom: 0; /* Remove default margin */
+            font-size: 1.1rem; /* Slightly larger text */
+            color: #343a40; /* Darker text color */
+        }
+
+        /**** page 2 Capital Commitement ****/
+
+        .capital .form-container {
+            background-color: #fff;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .capital .input-group-custom {
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            overflow: hidden; /* Ensures child elements respect border-radius */
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .capital .input-group-custom:focus-within {
+            border-color: #537459;
+            box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+        }
+
+        .capital .input-group-custom .flag-icon {
+            width: 30px; /* Adjust flag size */
+            height: 20px;
+            margin-right: 0.75rem;
+            border-radius: 3px; /* Slightly rounded corners for the flag */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        .capital .input-group-custom input {
+            border: none;
+            outline: none;
+            flex-grow: 1; /* Allows input to take up available space */
+            font-size: 1.2rem; /* Larger font size for the amount */
+            text-align: right; /* Align text to the right */
+            padding: 0; /* Remove default input padding */
+            color: #343a40;
+        }
+
+        .capital .input-group-custom input::placeholder {
+            color: #6c757d;
+        }
+
+        .capital #capitalCommitmentInput.form-control:focus {
+            box-shadow: unset;
+        }
+        .capital .input-group-custom .currency-symbol {
+            font-size: 1.2rem;
+            color: #343a40;
+            margin-left: 0.25rem; /* Space between amount and symbol */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .capital .form-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            .capital .input-group-custom input {
+                font-size: 1.1rem;
+            }
+            .capital .input-group-custom .currency-symbol {
+                font-size: 1.1rem;
+            }
+        }
+
+        /** page 3 Contacts / Signatories**/
+
+        .contacts .table-container {
+            background-color: #fff;
+            border-radius: 0.75rem;
+            width: 100%;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+            padding-top: 1.5rem; /* Add padding for the header */
+        }
+
+        .contacts .custom-table {
+            width: 100%;
+            border-collapse: separate; /* Required for border-radius on cells */
+            border-spacing: 0;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .contacts .custom-table thead th {
+            background-color: #EAECF0; /* Light background for header */
+            padding: 1rem 1.5rem;
+            text-align: left;
+            font-weight: 500;
+            color: #000000; /* Muted text color */
+            border-bottom: 1px solid #dee2e6;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .contacts .custom-table tbody tr {
+            border-bottom: 1px solid #dee2e6; /* Separator for rows */
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .contacts .custom-table tbody tr:last-child {
+            border-bottom: none; /* No border for the last row */
+        }
+
+        .contacts .custom-table tbody tr:hover {
+            background-color: #f0f2f5; /* Light hover effect */
+        }
+
+        .contacts .custom-table tbody td {
+            padding: 1rem 1.5rem;
+            vertical-align: middle;
+            color: #343a40;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .contacts .form-check-label {
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: #343a40;
+        }
+        .contacts .form-check-input {
+            width: 1.25em; /* Larger checkbox */
+            height: 1.25em;
+            margin-right: 0.75rem;
+            vertical-align: middle;
+        }
+
+        .contacts .add_new {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        /* Hide default Bootstrap checkbox focus outline */
+        .contacts .form-check-input:focus {
+            box-shadow: none;
+        }
+
+        .contacts .form-check-input:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        /* Ensure the checkbox and label are aligned */
+        .contacts .d-flex.align-items-center {
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .contacts .table-container {
+                margin: 0 0.5rem;
+                padding-top: 1rem;
+            }
+            .contacts .table-header {
+                padding: 0 1rem 0.75rem;
+                font-size: 1.3rem;
+            }
+            .contacts .custom-table thead {
+                display: none; /* Hide table header on small screens */
+            }
+            .contacts .custom-table, .custom-table tbody, .custom-table tr, .custom-table td {
+                display: block; /* Make table elements behave like blocks */
+                width: 100%;
+            }
+            .contacts .custom-table tr {
+                margin-bottom: 1rem;
+                border: 1px solid #dee2e6;
+                border-radius: 0.5rem;
+                overflow: hidden;
+            }
+            .contacts .custom-table tbody td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .contacts .custom-table tbody td::before {
+                content: attr(data-label); /* Use data-label for pseudo-elements */
+                position: absolute;
+                left: 1.5rem;
+                width: calc(50% - 1.5rem);
+                text-align: left;
+                font-weight: 600;
+                color: #6c757d;
+            }
+            .contacts .custom-table tbody td:first-child {
+                text-align: left; /* Keep the first column (checkbox + name) left-aligned */
+            }
+            .contacts .custom-table tbody td:first-child::before {
+                content: ""; /* No label for the first column */
+            }
+        }
+
+        /** page 4 Bank **/
+
+        .bank .form-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            width: 100%;
+        }
+
+        .bank .form-group-custom {
+            margin-bottom: 1.5rem;
+            padding: 0 1rem 0.5rem 1rem; 
+            border-radius: 0.5rem; 
+            position: relative; 
+            background-color: #fff;
+            margin-top: 1rem; 
+        }
+
+        .bank .form-label-custom {
+            font-size: 10px;
+            font-weight: 400;
+            color: #7F8084; 
+            display: block; 
+            float: none; 
+            padding: 0 0.5rem; 
+            margin-bottom: 0;
+            position: absolute; 
+            top: -0.4rem; 
+            left: 2rem; 
+            background-color: #ffffff; 
+            border-radius: 0.25rem;
+            line-height: 1; 
+            z-index: 9;
+        }
+        .bank .form-label-custom.active {
+            color: #537459;
+        }
+        .bank .form-control-custom {
+            border: 1px solid #9DACA8;
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            width: 100%;
+        }
+        .bank textarea.form-control-custom {
+            border: 1px solid #9DACA8;
+            font-size: 14px;
+            font-weight: 400;
+            color: #7F8084;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            width: 100%;
+        }
+        .bank .form-control-custom.active:focus {
+            border-color: #537459;
+            box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+            outline: none;
+        }
+        .bank .form-control-custom:focus {
+            border-color: #000;
+            box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+            outline: none;
+        }
+
+        /* Specific styling for the IBAN field with icon */
+        .bank .iban-input-group {
+            position: relative;
+        }
+
+        .bank .iban-input-group .form-control-custom {
+            padding-right: 3rem; /* Make space for the icon */
+        }
+
+        .bank .iban-input-group .bi-check-circle-fill {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #537459; /* Green color for valid icon */
+            font-size: 1.5rem; /* Larger icon */
+        }
+
+        .bank .validation-text {
+            font-size: 0.85rem;
+            color: #537459; /* Green color for valid text */
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .bank .info-text {
+            font-size: 0.85rem;
+            color: #6c757d; /* Muted text color for info */
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+        .bank .hintText {
+            color:#7F8084 ;
+            font-size: 10px;
+            padding: 0 1rem 0.5rem 1rem;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .bank .form-container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            .bank .form-control-custom {
+                font-size: 1rem;
+                padding: 0.6rem 0.8rem;
+            }
+            .bank .iban-input-group .bi-check-circle-fill {
+                font-size: 1.2rem;
+                right: 0.75rem;
+            }
+            .bank .form-label-custom, .validation-text, .info-text {
+                font-size: 0.8rem;
+            }
+        }
+
+        /**** page 5 KYC ****/
+        .kyc .step-wrapper {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .kyc .step-container {
+          display: flex;
+          flex-wrap: nowrap;
+          min-width: max-content;
+          gap: 0px;
+          padding-bottom: 10px;
+        }
+
+        .kyc .tab-content h5 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .kyc .tab-content p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .kyc .step {
+          position: relative;
+          background: #F0F0F0;
+          padding: 12px 20px;
+          color: #181D27;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          clip-path: polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%);
+          white-space: nowrap;
+          cursor: pointer;
+          transition: background 0.2s;
+        }
+
+        .kyc .step:hover {
+          background-color: #537459;
+          color: #fff;
+        }
+
+        .kyc .step-content {
+          padding-top: 20px;
+          border-top: none;
+        }
+
+        .kyc .step.active {
+          background: #537459;
+          color: #fff;
+        }
+
+        .kyc .step.clicked {
+          background-color: #537459;
+          color: #fff;
+        }
+
+        .kyc .upload-box {
+          border: 2px dashed #ddd;
+          background-color: #fff;
+          padding: 2rem;
+          text-align: center;
+          border-radius: 5px;
+        }
+
+        .kyc .upload-box i {
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+        }
+
+        .kyc .upload-box button {
+          background-color: #537459;
+          font-weight: bold;
+          padding: 0.2rem 0.6rem;
+          border: none;
+          border-radius: 4px;
+          margin-left: 0.4rem;
+        }
+
+        .kyc .uploadedFileElement { 
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .kyc .file-info {
+          background-color: #f3f3f3;
+          padding: 0.8rem 1rem;
+          border-radius: 3px;
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-weight: 500;
+        }
+
+        .kyc .file-info span {
+            font-size: 20px;
+            font-weight: 500;
+            color: #989C5E;
+        }
+
+        .kyc .file-info button {
+          background: none;
+          border: none;
+          font-size: 1.2rem;
+          color: #000;
+          cursor: pointer;
+        }
+
+        @media (max-width: 576px) {
+          .kyc .upload-box {
+            padding: 1.2rem;
+          }
+
+          .kyc .upload-box button {
+            margin-top: 0.6rem;
+            display: block;
+          }
+        }
+        /*** SIGNATURE PAGE ***/
+        .signature h5 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .signatureBox {
+          border: 2px dashed #ddd;
+          background-color: #fff;
+          padding: 2rem;
+          text-align: center;
+          border-radius: 5px;
+        }
+
+        /*** Final **/
+        .final .step-wrapper {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .final .step-container {
+          display: flex;
+          flex-wrap: nowrap;
+          min-width: max-content;
+          gap: 0px;
+          padding-bottom: 10px;
+        }
+        .final .tab-content h5 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .final .tab-content p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .final .step {
+          position: relative;
+          background: #F0F0F0;
+          padding: 12px 20px;
+          color: #181D27;
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          clip-path: polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%, 7% 50%);
+          white-space: nowrap;
+          cursor: pointer;
+          transition: background 0.2s;
+          width: 20%;
+        }
+        .final .step:hover {
+          background-color: #537459;
+          color: #fff;
+        }
+        .final .step-content {
+          padding-top: 20px;
+          border-top: none;
+        }
+
+        .final .step.active {
+          background: #537459;
+          color: #fff;
+        }
+
+        .final .step.clicked {
+          background-color: #537459;
+          color: #fff;
+        }
+
+        /*** docusign modal  ****/
+        .a4-page {
+            max-width: 550px; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25mm 20mm; /* Margins for A4 page */
+            box-sizing: border-box; /* Include padding in the width/height */
+            border-radius: 8px; /* Rounded corners for the page */
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #537459; /* Specified text color */
+        }
+
+        .document-text {
+            color: #537459; /* Specified text color */
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .document-text strong {
+            font-weight: 600;
+        }
+
+        .logo-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #537459; /* Specified text color */
+        }
+
+        .highlight-box {
+            background-color: #fef08a; 
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            color: #537459; /* Specified text color */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .a4-page, .header-controls {
+                width: 95%; /* Adjust width for smaller screens */
+                padding: 20px;
+                min-height: auto; /* Allow height to adjust */
+            }
+            .logo-title {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+          .stepper {
+            margin-bottom: 2rem;
+          }
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="d-flex justify-content-between navbar-custom flex-wrap">
+    <div class="d-flex align-items-center mb-2 mb-md-0">
+      <div class="brand-name">
+        <a href="">
+            <!-- <img src="logo.png" class="img-fluid" alt="logo"> -->
+            <img src="logo_dark.png" class="img-fluid" alt="logo">
+        </a>
+      </div>
+    </div>
+    <div class="d-flex align-items-center flex-wrap right-section">
+      <div class="saved-text">
+        <span class="float-end"><b>Saved</b></span><br>Only you have access.
+      </div>
+      <button type="button" class="btn btn-custom me-2">
+        <i class="bi bi-person-fill-add"></i>
+        Share
+      </button>
+      <button type="button" class="btn btn-custom me-2">
+        <i class="bi bi-file-text"></i>
+        View documents (2)
+      </button>
+      <div class="user-name">
+        <i class="bi bi-person"></i>
+        Albert Dupont
+      </div>
+    </div>
+  </nav>
+
+<form action="">
+  <div class="container py-4 position-relative">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="stepper" id="stepper">
+          <div class="step current p-2" data-step="0">
+            <div class="step-icon"></div>
+            <div class="step-label">Review</div>
+          </div>
+          <div class="step p-2" data-step="1">
+            <div class="step-icon"></div>
+            <div class="step-label">General Information</div>
+          </div>
+          <div class="step p-2" data-step="2">
+            <div class="step-icon"></div>
+            <div class="step-label">Capital Commitment</div>
+          </div>
+          <div class="step p-2" data-step="3">
+            <div class="step-icon"></div>
+            <div class="step-label">Contacts / Signatories</div>
+          </div>
+          <div class="step p-2" data-step="4">
+            <div class="step-icon"></div>
+            <div class="step-label">Bank</div>
+          </div>
+          <div class="step p-2" data-step="5">
+            <div class="step-icon"></div>
+            <div class="step-label">KYC</div>
+          </div>
+          <div class="step p-2" data-step="6">
+            <div class="step-icon"></div>
+            <div class="step-label">Signature</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8 form-section">
+        <!-- step 0 Review -->
+        <div id="stage-content-0">
+          <h3 class="text-center header_text mt-5">
+            As an Investor, please review carefully the Subscription Agreement. Do not hesitate to contact us for any questions.
+          </h3>
+        </div>
+        <!-- step 1 General Information -->
+        <div id="stage-content-1" class="d-none general">
+          <div class="container" style="max-width: 400px;">
+              <div class="mb-4 text-center">
+                  <h5 class="header_text">Please select the type of investor?</h5>
+              </div>
+              <!-- Radio Card 1: Individual -->
+              <label class="radio-card d-block" for="radioIndividual">
+                  <input class="form-check-input" type="radio" name="accountType" id="radioIndividual" value="individual">
+                  <span class="form-check-label">Individual</span>
+              </label>
+
+              <!-- Radio Card 2: Corporate (Example, based on screenshot gap) -->
+              <label class="radio-card d-block" for="radioCorporate">
+                  <input class="form-check-input" type="radio" name="accountType" id="radioCorporate" value="corporate">
+                  <span class="form-check-label">Corporate</span>
+              </label>
+
+              <!-- Radio Card 3: Life Insurance -->
+              <label class="radio-card d-block" for="radioLifeInsurance">
+                  <input class="form-check-input" type="radio" name="accountType" id="radioLifeInsurance" value="lifeInsurance">
+                  <span class="form-check-label">Life Insurance</span>
+              </label>
+          </div>
+        </div>
+        <!-- step 2 Capital Commitment  -->
+        <div id="stage-content-2" class="d-none capital">
+          <div class="container form-container">
+              <h5 class="header_text">Enter the investor’s capital commitment</h5>
+              <div class="input-group-custom mb-3" id="capitalCommitmentWrapper">
+                	<!-- Euro flag icon -->
+                	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" alt="European Union Flag" class="flag-icon">
+					<input type="text" class="form-control" id="capitalCommitmentInput"  value="" aria-label="Capital Commitment" pattern="^[0-9]*$" inputmode="numeric" onkeypress="return /[0-9]/.test(event.key)" required>
+                	<span class="currency-symbol">€</span>
+              </div>
+          </div>
+        </div>
+        <!-- step 3 Contacts / Signatories  -->
+        <div id="stage-content-3" class="d-none contacts">
+          <div class="table-container">
+              <h3 class=" header_text mb-3 text-center">
+                  Please list all the accounts you want to give access to.
+              </h3>
+              <table class="custom-table mb-4">
+                  <thead>
+                      <tr>
+                          <th>Contact</th>
+                          <th>Access Type</th>
+                          <th>Email Account</th>
+                      </tr>
+                  </thead>
+                  <tbody id="data-body">
+                      <tr>
+                          <td data-label="Contact">
+                              <div class="d-flex align-items-center">
+                                  <input class="form-check-input" type="checkbox" id="contact1">
+                                  <label class="form-check-label" for="contact1">Albert Dupont</label>
+                              </div>
+                          </td>
+                          <td data-label="Access Type">Administrator</td>
+                          <td data-label="Email Account">adupont@gmail.com</td>
+                      </tr>
+                      <tr>
+                          <td data-label="Contact">
+                              <div class="d-flex align-items-center">
+                                  <input class="form-check-input" type="checkbox" id="contact2">
+                                  <label class="form-check-label" for="contact2">Jacques Paquin</label>
+                              </div>
+                          </td>
+                          <td data-label="Access Type">Co-subscriber</td>
+                          <td data-label="Email Account">jpaquin@outlook.com</td>
+                      </tr>
+                      <tr>
+                          <td data-label="Contact">
+                              <div class="d-flex align-items-center">
+                                  <input class="form-check-input" type="checkbox" id="contact3">
+                                  <label class="form-check-label" for="contact3">Florian Kens</label>
+                              </div>
+                          </td>
+                          <td data-label="Access Type">Co-subscriber</td>
+                          <td data-label="Email Account">fkens@gmail.com</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <a href="javascript:void(0)" class="text-dark add_new text-decoration-none ps-3">+ Add new data</a>
+          </div>
+        </div>
+        <!-- step 4 Bank  -->
+        <div id="stage-content-4" class="d-none bank">
+          <div class="container form-container">
+              <!-- Account Name -->
+              <div class="form-group-custom">
+                  <label for="accountName" class="form-label-custom">*Account name</label>
+                  <input type="text" class="form-control-custom" id="accountName" value="" required>
+              </div>
+
+              <!-- Account Number -->
+              <div class="form-group-custom">
+                  <label for="accountNumber" class="form-label-custom">*Account number</label>
+                  <input type="text" class="form-control-custom" id="accountNumber" value="" pattern="^[0-9]*$" inputmode="numeric" onkeypress="return /[0-9]/.test(event.key)" required>
+              </div>
+
+              <!-- IBAN -->
+              <div class="form-group-custom">
+                  <label for="iban" class="form-label-custom active">*IBAN</label>
+                  <div class="iban-input-group">
+                      <input type="text" class="form-control-custom active" id="iban" value="" required>
+                      <!-- Checkmark icon (using a simple SVG for demonstration) -->
+                      <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <span class="validation-text">*IBAN is valid</span>
+              </div>
+
+              <!-- For further credit to -->
+              <div class="form-group-custom mb-0">
+                <label for="furtherCredit" class="form-label-custom">Notes</label>
+                <textarea type="text" class="form-control-custom" id="furtherCredit" rows="4" cols="4" required>For further credit to</textarea>
+              </div>
+
+              <div>
+                <p class="hintText">*For further credit to is not required for most bank accounts. It may be required if you are using a brokerage</p>  
+              </div>
+          </div>
+        </div>
+        <!-- step 5 KYC  -->
+        <div id="stage-content-5" class="d-none kyc">
+            <!-- if individual is selected -->
+            <div class="individual">
+                <!-- Step Navigation -->
+                <div class="step-wrapper mb-3" style="border-bottom: 1px solid #537459;">
+                    <div class="step-container" role="tablist">
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#validIdentityDocument" role="tab" id="1"><span class="icon-wrapper"> <i class="bi bi-check-circle"></i> </span> Valid Identity Document</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#proofOfAddress" role="tab" id="2"><span class="icon-wrapper">2</span> Proof of Address</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#TIN" role="tab" id="3"><span class="icon-wrapper">3</span> Tax Identification Number (TIN)</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#proofOfIncome" role="tab" id="4"><span class="icon-wrapper">4</span> Proof of Income or Wealth Origin</div>
+                    </div>
+                </div>
+                  <!-- Tab Content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active step-content" id="validIdentityDocument" role="tabpanel">
+                        <h5 class="mb-3">Valid Identity Document</h5>
+                        <p class="mb-0">a. Passport or national ID card (both sides if applicable) </p>
+                        <p class="mb-0">b. Proof of residence permit if not an EU citizen</p>
+                        <div class="py-5" style="border-bottom:1px solid #537459">
+                            <div class="upload-box" id="individualDrop-area">
+                                <input type="file" id="individualFileElem" accept=".pdf" multiple style="display:none" />
+                                <label for="individualFileElem" class="uploadedFileElement" style="cursor:pointer;">
+                                  <i class="bi bi-download"></i> Drag your file(s) here or
+                                </label>
+                                <button type="button" onclick="document.getElementById('individualFileElem').click()">Browse</button>
+                            </div>
+                            <div id="individualFile-list"></div>
+                        </div>
+                    </div>
+                    <!-- Proof of Address tab -->
+                    <div class="tab-pane fade step-content" id="proofOfAddress" role="tabpanel">
+                      <h5>Proof of Address</h5>
+                      <p>Proof of Address step...</p>
+                    </div>
+                    <!-- Tax Identification Number (TIN) tab -->
+                    <div class="tab-pane fade step-content" id="TIN" role="tabpanel">
+                      <h5>Tax Identification Number (TIN)</h5>
+                      <p>Tax Identification Number (TIN) step...</p>
+                    </div>
+                    <!-- Proof of Income or Wealth Origin -->
+                    <div class="tab-pane fade step-content" id="proofOfIncome" role="tabpanel">
+                      <h5>Proof of Income or Wealth Origin</h5>
+                      <p>Proof of Income or Wealth Origin step...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- if Corporate is selected -->
+            <div class="corporate d-none">
+                <!-- Step Navigation -->
+                <div class="step-wrapper mb-3" style="border-bottom: 1px solid #537459;">
+                    <div class="step-container" role="tablist">
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#incorporationDocs" role="tab" id="1"><span class="icon-wrapper"> <i class="bi bi-check-circle"></i> </span> Incorporation Docs</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#idOfLegalRepresentative" role="tab" id="2"><span class="icon-wrapper">2</span> ID of Legal Representative</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#listOfUBOs" role="tab" id="3"><span class="icon-wrapper">3</span> List of UBOs</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#proofOfTIN" role="tab" id="4"><span class="icon-wrapper">4</span> Proof of TIN</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#CRS_FATCA" role="tab" id="4"><span class="icon-wrapper">5</span> CRS/FATCA</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#proofOfWealth" role="tab" id="4"><span class="icon-wrapper">6</span> Proof of Wealth</div>
+                    </div>
+                </div>
+                  <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Incorporation Docs tab -->
+                    <div class="tab-pane fade show active step-content" id="incorporationDocs" role="tabpanel">
+                        <h5 class="mb-3">Incorporation Documents</h5>
+                        <p class="mb-0">a. K-Bis extract (dated within 3 months) </p>
+                        <p class="mb-0">b. Articles of association (statuts à jour)</p>
+                        <div class="py-5" style="border-bottom:1px solid #537459">
+                            <div class="upload-box" id="corporateDrop-area">
+                                <input type="file" id="corporateFileElem" accept=".pdf" multiple style="display:none" />
+                                <label for="corporateFileElem" class="uploadedFileElement" style="cursor:pointer;">
+                                  <i class="bi bi-download"></i> Drag your file(s) here or
+                                </label>
+                                <button type="button" onclick="document.getElementById('corporateFileElem').click()">Browse</button>
+                            </div>
+                            <div id="corporateFile-list"></div>
+                        </div>
+                    </div>
+                    <!-- ID of Legal Representative tab -->
+                    <div class="tab-pane fade step-content" id="idOfLegalRepresentative" role="tabpanel">
+                      <h5>ID of Legal Representative</h5>
+                      <p>ID of Legal Representative step...</p>
+                    </div>
+                    <!-- List of UBOs tab -->
+                    <div class="tab-pane fade step-content" id="listOfUBOs" role="tabpanel">
+                      <h5>List of UBOs</h5>
+                      <p>List of UBOs step...</p>
+                    </div>
+                    <!-- Proof of TIN -->
+                    <div class="tab-pane fade step-content" id="proofOfTIN" role="tabpanel">
+                      <h5>Proof of TIN</h5>
+                      <p>Proof of TIN step...</p>
+                    </div>
+                    <!-- CRS/FATCA -->
+                    <div class="tab-pane fade step-content" id="CRS_FATCA" role="tabpanel">
+                      <h5>CRS/FATCA</h5>
+                      <p>CRS/FATCA step...</p>
+                    </div>
+                    <!-- Proof of Wealth -->
+                    <div class="tab-pane fade step-content" id="proofOfWealth" role="tabpanel">
+                      <h5>Proof of Wealth</h5>
+                      <p>Proof of Wealth step...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Signature Stage-->
+        <div id="stage-content-6" class="d-none signature">
+			<h5>
+				To assist the General Partner in meeting these obligations, investors should submit the following documentation:
+			</h5>
+			<h5>
+				Unexpired passport, photo driver’s license, other government issued photo ID or birth certificate. In the case of a joint subscription, such documentation is required for each investor.
+			</h5>	
+			<div class="py-5" style="border-bottom:1px solid #537459">
+                <div class="signatureBox text-center">
+                     <i class="bi bi-file-earmark-plus" style="cursor:pointer;font-size:120px" data-bs-toggle="offcanvas" data-bs-target="#offcanvasModal" aria-controls="offcanvasModal"></i>
+                </div>
+            </div>
+        </div>
+        <!-- last page -->
+        <div id="stage-content-7" class="d-none final">
+            <!-- Header -->
+            <header class="pb-4" style="border-bottom:1px solid #000">
+                <div class="text-center mb-4">
+                    <img src="world_check.png" class="img-fluid" alt="world Check">
+                </div>
+                <div class="container d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Powered by Camignac</span>
+                    <button type="button" class="btn btn-success rounded-3 shadow-sm py-2 px-4 fw-semibold" style="background-color: #537459;border-color: #537459;">
+                        Open in Camignac
+                    </button>
+                </div>
+            </header>
+            <!-- Main Content Area -->
+            <main class="flex-grow-1 container py-5">
+                <!-- Info Section -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                    <div class="col">
+                        <div class="">
+                            <p class="text-muted small mb-1">Fund</p>
+                            <p class="fs-5 fw-semibold" style="border-bottom:1px solid #000">Camignac Value Add 2</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <p class="text-muted small mb-1">Fund Closing</p>
+                            <p class="fs-5 fw-semibold" style="border-bottom:1px solid #000">First Closing</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <p class="text-muted small mb-1">Status</p>
+                            <p class="fs-5 fw-semibold" style="border-bottom:1px solid #000">Executed</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Progress Stepper -->
+                <div class="step-wrapper mb-3">
+                    <div class="step-container" role="tablist">
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#sent" role="tab"> Sent</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#inprogress" role="tab">In Progress</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#signed" role="tab" >Signed</div>
+                      <div class="step" data-bs-toggle="tab" data-bs-target="#approved" role="tab">Approved</div>
+                      <div class="step active" data-bs-toggle="tab" data-bs-target="#fullyExcuted" role="tab">Fully Excuted</div>
+                    </div>
+                </div>
+
+                <!-- Subscription Documents Section -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold mb-4">Subscription Documents Complete</h2>
+                    <div>
+                        <!-- Checkmark SVG Icon -->
+                        <i class="bi bi-check-circle-fill" style="font-size: 100px;"></i>
+                    </div>
+                    <button type="button" class="btn btn-success rounded-3 shadow py-3 px-5 fw-semibold fs-5" style="background-color: #537459;border-color: #537459;">
+                        Review & Convert to Investor
+                    </button>
+                </div>
+            </main>
+
+        </div>
+		<!-- Offcanvas Modal -->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasModal" aria-labelledby="offcanvasModalLabel">
+			<div class="offcanvas-header">
+			  <div class="offcanvas-title" id="offcanvasModalLabel"><img src="docusign.png" alt="docusign logo" class="img-fluid w-50"></div>
+			  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+                <div class="d-flex flex-column align-items-center">
+                    <!-- Header Controls (simulated) -->
+                    <img src="headers.png" class="img-fluid" alt="headers img">
+                    <!-- A4 Page Content -->
+                    <div class="a4-page p-4">
+                        <h1 class="logo-title text-start"><img src="logo.png" class="img-fluid" alt="logo"></h1>
+                        <h2 class="section-title">1. Souscription au fonds</h2>
+
+                        <div class="document-text mb-4">
+                            <p class="mb-1"><strong>Le Fonds :</strong></p>
+                            <p class="mb-1">Camignac VALUE ADD 2 FPCI</p>
+                            <p class="mb-1">Fonds Professionnel de Capital Investissement</p>
+                            <p class="mb-1">Régi par les articles L 214-159 et suivants du Code monétaire et financier (CMF) et ses textes d'application, ainsi que par le Règlement.</p>
+                            <p class="mb-1">Ci-après, Le <strong>&laquo; Fonds &raquo;</strong></p>
+                            <p class="mb-1">Part FR817919762019</p>
+                        </div>
+
+                        <div class="document-text mb-4">
+                            <p class="mb-1"><strong>Les Parts de Fonds :</strong></p>
+                            <p class="mb-1">Ci-après, Les <strong>&laquo; Parts du Fonds &raquo;</strong></p>
+                        </div>
+
+                        <div class="document-text mb-4">
+                            <p class="mb-1"><strong>Le Fonds est géré par :</strong></p>
+                            <p class="mb-1">Camignac Value Add 2</p>
+                            <p class="mb-1">Société Anonyme au capital social de 250 000 euros dont le siège social est situé au 128, rue de la Boétie – 75008 Paris N° RCS Paris FR 08979353935</p>
+                            <p class="mb-1">Ci-après, <strong>&laquo; La Société de gestion &raquo;</strong></p>
+                        </div>
+
+                        <!-- Add more content as needed to fill the page -->
+
+                    </div>
+                </div>
+			</div>
+		</div>
+
+        <!-- continue button area -->
+        <div class="d-flex justify-content-center mt-5">
+            <a href="javascript:void(0)" class="btn-back d-none position-absolute text-decoration-none" id="backBtn" onclick="prevStage()"> < Back</a>
+            <button type="button" class="btn-continue" onclick="nextStage()">Continue</button>
+			<!-- Submit Button -->
+			<button type="button" class="d-none btn-submit" onclick="submitForm()">Submit</button>
+        </div>
+        <!-- Help Button -->
+        <button type="button" class="help-button" id="help-button">
+            <i class="bi bi-question-circle i"></i>          
+            <span>Help</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let currentStage = 0;
+    const totalStages = 6;
+
+    function selectType(btn) {
+      const buttons = document.querySelectorAll('.investor-type button');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+	function submitForm(e) {
+	    // Optional: if called from an event listener with event
+	    if (e) e.preventDefault();
+
+	    currentStage = 7;
+	    updateStepper();
+	    document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+	    document.getElementById(`stage-content-${currentStage - 1}`).classList.add("d-none");
+
+	    // setTimeout(function () {
+	    //     document.querySelector('form').submit();
+	    // }, 5000);
+	}
+    function updateStepper() {
+      const steps = document.querySelectorAll('.stepper .step');
+      steps.forEach((step, index) => {
+        const icon = step.querySelector('.stepper .step-icon');
+        step.classList.remove('current');
+        if (index < currentStage) {
+          icon.classList.add('active');
+          icon.innerHTML = '<i class="bi bi-check-lg"></i>';
+        } else {
+          icon.classList.remove('active');
+          icon.textContent = '';
+        }
+        if (index === currentStage) {
+          step.classList.add('current');
+        }
+      });
+      document.getElementById('backBtn').classList.toggle('d-none', currentStage === 1);
+      document.getElementById('backBtn').classList.toggle('d-none', currentStage === 7);
+      document.getElementById('help-button').classList.toggle('d-none', currentStage === 7);
+      if(currentStage === 6){
+	      document.querySelector('.btn-submit').classList.remove('d-none');
+      }
+      else {
+	      document.querySelector('.btn-submit').classList.add('d-none');
+      }
+      if(currentStage === 6 || currentStage == 7){
+	      document.querySelector('.btn-continue').classList.add('d-none');
+      }
+      else {
+	      document.querySelector('.btn-continue').classList.remove('d-none');
+      }
+    }
+
+    function nextStage() {
+        switch(currentStage){
+        case 0 :
+            currentStage++;
+            updateStepper();
+            document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+            document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            break;
+              
+        case 1: 
+            const selectedOption = document.querySelector('input[name="accountType"]:checked');
+            if (selectedOption) {
+                localStorage.setItem("option",selectedOption.value)
+                currentStage++;
+                updateStepper();
+                document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+                document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            } else {
+              alert('please select option')
+            }
+            break;
+        case 2: 
+            const value = document.getElementById('capitalCommitmentInput').value.trim();
+	        document.getElementById('capitalCommitmentWrapper').addEventListener('input', function () {
+	            if (document.getElementById('capitalCommitmentInput').value.trim() !== "") {
+	                document.getElementById('capitalCommitmentWrapper').classList.remove('invalid');
+	            }
+	        });
+
+
+            if (value !== "") {
+                currentStage++;
+                updateStepper();
+                document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+                document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            } else {
+            	document.getElementById('capitalCommitmentWrapper').classList.add('invalid')
+                alert('please add value')
+                return
+            }
+            break;
+
+        case 3: 
+        	if(localStorage.getItem('option') == 'individual') {
+        		document.querySelector('.individual').classList.remove('d-none')
+        		document.querySelector('.corporate').classList.add('d-none')
+        	}
+        	else {
+        		document.querySelector('.individual').classList.add('d-none')
+        		document.querySelector('.corporate').classList.remove('d-none')
+        	}
+            currentStage++;
+            updateStepper();
+            document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+            document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            break;
+
+			case 4:
+			    const accountNameInput = document.getElementById('accountName');
+			    const accountNumberInput = document.getElementById('accountNumber');
+			    const ibanInput = document.getElementById('iban');
+			    const furtherCreditInput = document.getElementById('furtherCredit');
+
+			    const accountName = accountNameInput.value.trim();
+			    const accountNumber = accountNumberInput.value.trim();
+			    const iban = ibanInput.value.trim();
+			    const furtherCredit = furtherCreditInput.value.trim();
+
+			    // Add 'invalid' class to empty fields
+			    if (accountName === "") accountNameInput.classList.add('invalid');
+			    if (accountNumber === "") accountNumberInput.classList.add('invalid');
+			    if (iban === "") ibanInput.classList.add('invalid');
+			    if (furtherCredit === "") furtherCreditInput.classList.add('invalid');
+
+			    // Add input event listeners to remove 'invalid' when corrected
+			    [accountNameInput, accountNumberInput, ibanInput, furtherCreditInput].forEach(input => {
+			        input.addEventListener('input', function () {
+			            if (this.value.trim() !== "") {
+			                this.classList.remove('invalid');
+			            }
+			        });
+			    });
+
+			    // Show alerts and stop if any field is empty
+			    if (accountName === "") {
+			        alert('Please add Account Name');
+			        return;
+			    } else if (accountNumber === "") {
+			        alert('Please add Account Number');
+			        return;
+			    } else if (iban === "") {
+			        alert('Please add IBAN');
+			        return;
+			    } else if (furtherCredit === "") {
+			        alert('Please add Notes');
+			        return;
+			    } else {
+			        currentStage++;
+			        updateStepper();
+			        document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+			        document.getElementById(`stage-content-${currentStage - 1}`).classList.add("d-none");
+			    }
+			    break;
+            case 5: 
+	            currentStage++;
+	            updateStepper();
+	            document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+	            document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            break;
+
+            case 6: 
+            	document.querySelector('.btn-submit').classList.remove('d-none');
+            	document.querySelector('.btn-continue').classList.add('d-none');
+	            currentStage++;
+	            updateStepper();
+	            document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+	            document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+            break;
+        }
+
+      // if (currentStage < totalStages) {
+      //   currentStage++;
+      //   updateStepper();
+      //   document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+      //   document.getElementById(`stage-content-${currentStage -1 }`).classList.add("d-none");
+      // }
+    }
+
+    function prevStage() {
+      if (currentStage > 0) {
+        currentStage--;
+        updateStepper();
+        document.getElementById(`stage-content-${currentStage+1}`).classList.add("d-none");
+        document.getElementById(`stage-content-${currentStage}`).classList.remove("d-none");
+      }
+    }
+
+
+    // select radio button functionality 
+    document.addEventListener('DOMContentLoaded', function() {
+        const radioCards = document.querySelectorAll('.radio-card');
+        const radioInputs = document.querySelectorAll('input[name="accountType"]');
+
+        // Function to update selected state
+        function updateSelectedState() {
+            radioCards.forEach(card => {
+                const radioInput = card.querySelector('input[type="radio"]');
+                if (radioInput.checked) {
+                    card.classList.add('selected');
+                } else {
+                    card.classList.remove('selected');
+                }
+            });
+        }
+
+        // Add event listener to each radio input
+        radioInputs.forEach(input => {
+            input.addEventListener('change', updateSelectedState);
+        });
+
+        // Set initial selected state on page load
+        updateSelectedState();
+    });
+
+
+
+	   // add new row when add new is clicked
+      let rowCounter = 4; // To increment checkbox ID
+
+      document.querySelector('.add_new').addEventListener('click', function () {
+        const tbody = document.getElementById('data-body');
+
+        // Create a new row
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td data-label="Contact">
+                <div class="d-flex align-items-center">
+                    <input class="form-check-input" type="checkbox" id="contact${rowCounter}">
+                    <input type="text" class="form-control ms-2" placeholder="Full name">
+                </div>
+            </td>
+            <td data-label="Access Type">
+                <input type="text" class="form-control" placeholder="Access Type">
+            </td>
+            <td data-label="Email Account">
+                <input type="email" class="form-control" placeholder="Email Address">
+            </td>
+            <td>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-sm btn-success me-2 save-btn">Save</button>
+                    <button type="button" class="btn btn-sm btn-danger cancel-btn">Cancel</button>
+                </div>
+            </td>
+        `;
+        tbody.appendChild(tr);
+
+        // Focus on the first input
+        tr.querySelector('input[type="text"]').focus();
+
+        rowCounter++;
+
+        // Save button event
+        tr.querySelector('.save-btn').addEventListener('click', function () {
+          const nameInput = tr.querySelector('td:nth-child(1) input[type="text"]');
+          const accessInput = tr.querySelector('td:nth-child(2) input');
+          const emailInput = tr.querySelector('td:nth-child(3) input');
+
+          const name = nameInput.value.trim();
+          const access = accessInput.value.trim();
+          const email = emailInput.value.trim();
+
+          if (!name || !access || !email) {
+            alert("Please fill in all fields.");
+            return;
+          }
+
+          const checkboxId = `contact${rowCounter}`;
+          tr.innerHTML = `
+            <td data-label="Contact">
+              <div class="d-flex align-items-center">
+                <input class="form-check-input" type="checkbox" id="${checkboxId}">
+                <label class="form-check-label ms-2" for="${checkboxId}">${name}</label>
+              </div>
+            </td>
+            <td data-label="Access Type">${access}</td>
+            <td data-label="Email Account">${email}</td>
+          `;
+          rowCounter++;
+        });
+
+        // Cancel button event
+        tr.querySelector('.cancel-btn').addEventListener('click', function () {
+          tr.remove();
+        });
+      });
+
+
+    // show step content functionality
+    document.querySelectorAll('.kyc .step').forEach(el => {
+      el.addEventListener('click', () => {
+        const icon = el.querySelector('.icon-wrapper');
+        icon.innerHTML = '<i class="bi bi-check-circle"></i>';
+
+        // Show the tab (Bootstrap will update .active and aria-selected)
+        const tabTrigger = new bootstrap.Tab(el);
+        tabTrigger.show();
+
+        // Mark this as custom-clicked (persists across tab changes)
+        el.classList.add('clicked');
+      });
+    });
+
+
+
+    // document.querySelectorAll('.kyc .step').forEach(el => {
+    //   el.addEventListener('click', () => {
+    //     const icon = el.querySelector('.icon-wrapper');
+    //     icon.innerHTML = '<i class="bi bi-check-circle"></i>';
+    //     const tabTrigger = new bootstrap.Tab(el);
+    //     tabTrigger.show();
+
+    //     // document.querySelectorAll('.kyc .step').forEach(s => s.classList.remove('active'));
+    //     document.querySelectorAll('.kyc .step').forEach(s => s.classList.remove('active'));
+    //     el.classList.add('active');
+    //   });
+    // });
+
+
+    // document.querySelectorAll('.kyc .step').forEach((el, index, allSteps) => {
+    //   el.addEventListener('click', () => {
+    //     // Reset all steps
+    //     allSteps.forEach((s, i) => {
+    //       s.classList.remove('active');
+    //       const icon = s.querySelector('.icon-wrapper');
+    //       icon.innerHTML = i + 1; // Set step number (1-based)
+    //     });
+
+    //     // Set icon for the clicked step
+    //     el.classList.add('active');
+    //     const icon = el.querySelector('.icon-wrapper');
+    //     icon.innerHTML = '<i class="bi bi-check-circle"></i>';
+
+    //     // Activate Bootstrap tab
+    //     const tabTrigger = new bootstrap.Tab(el);
+    //     tabTrigger.show();
+    //   });
+    // });
+
+
+    // Activate first step on load
+    document.querySelector('.kyc .individual .step').click();
+    document.querySelector('.kyc .corporate .step').click();
+
+
+    // individual upload file functionality
+    const individualFileInput = document.getElementById('individualFileElem');
+    const individualFileList = document.getElementById('individualFile-list');
+    const individualDropArea = document.getElementById('individualDrop-area');
+
+    let individualUploadedFiles = [];
+
+    individualFileInput.addEventListener('change', () => {
+      individualHandleFiles(individualFileInput.files);
+    });
+
+    individualDropArea.addEventListener('dragover', e => {
+      e.preventDefault();
+      individualDropArea.classList.add('border-warning');
+    });
+
+    individualDropArea.addEventListener('dragleave', () => {
+      individualDropArea.classList.remove('border-warning');
+    });
+
+    individualDropArea.addEventListener('drop', e => {
+      e.preventDefault();
+      individualDropArea.classList.remove('border-warning');
+      individualHandleFiles(e.dataTransfer.files);
+    });
+
+    function individualHandleFiles(files) {
+      for (let file of files) {
+        if (file.type === "application/pdf") {
+          individualUploadedFiles.push(file);
+          individualAddFileToList(file);
+        }
+      }
+      individualFileInput.value = ''; // Clear input so same file can be added again if needed
+    }
+
+    function individualAddFileToList(file) {
+      const fileId = Math.random().toString(36).substr(2, 9);
+      const fileDiv = document.createElement('div');
+      fileDiv.className = 'file-info';
+      fileDiv.id = fileId;
+
+      const fileSpan = document.createElement('span');
+      fileSpan.textContent = file.name;
+
+      const removeBtn = document.createElement('button');
+      removeBtn.innerHTML = '×';
+      removeBtn.onclick = () => {
+        document.getElementById(fileId).remove();
+        individualUploadedFiles = individualUploadedFiles.filter(f => f.name !== file.name);
+      };
+
+      fileDiv.appendChild(fileSpan);
+      fileDiv.appendChild(removeBtn);
+      individualFileList.appendChild(fileDiv);
+    }
+
+
+    // corporate upload file functionality
+    const corporateFileInput = document.getElementById('corporateFileElem');
+    const corporateFileList = document.getElementById('corporateFile-list');
+    const corporateDropArea = document.getElementById('corporateDrop-area');
+
+    let corporateDropAreaUploadedFiles = [];
+
+    corporateFileInput.addEventListener('change', () => {
+      corporateHandleFiles(corporateFileInput.files);
+    });
+
+    corporateDropArea.addEventListener('dragover', e => {
+      e.preventDefault();
+      corporateDropArea.classList.add('border-warning');
+    });
+
+    corporateDropArea.addEventListener('dragleave', () => {
+      corporateDropArea.classList.remove('border-warning');
+    });
+
+    corporateDropArea.addEventListener('drop', e => {
+      e.preventDefault();
+      corporateDropArea.classList.remove('border-warning');
+      corporateHandleFiles(e.dataTransfer.files);
+    });
+
+    function corporateHandleFiles(files) {
+      for (let file of files) {
+        if (file.type === "application/pdf") {
+          corporateDropAreaUploadedFiles.push(file);
+          corporateAddFileToList(file);
+        }
+      }
+      corporateFileInput.value = ''; // Clear input so same file can be added again if needed
+    }
+
+    function corporateAddFileToList(file) {
+      const fileId = Math.random().toString(36).substr(2, 9);
+
+      const fileDiv = document.createElement('div');
+      fileDiv.className = 'file-info';
+      fileDiv.id = fileId;
+
+      const fileSpan = document.createElement('span');
+      fileSpan.textContent = file.name;
+
+      const removeBtn = document.createElement('button');
+      removeBtn.innerHTML = '×';
+      removeBtn.onclick = () => {
+        document.getElementById(fileId).remove();
+        uploadedFiles = uploadedFiles.filter(f => f.name !== file.name);
+      };
+
+      fileDiv.appendChild(fileSpan);
+      fileDiv.appendChild(removeBtn);
+      corporateFileList.appendChild(fileDiv);
+    }
+
+  </script>
+</body>
+
+</html>
