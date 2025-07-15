@@ -65,6 +65,100 @@ h1, h2, h3, h4, h5, h6 {
     color: #F8941D !important; /* Warning color for active/hover */
 }
 
+.dropdown-mega {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    display: none;
+    z-index: 1000;
+}
+.dropdown-mega.show {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.service-item i {
+    font-size: 1.5rem;
+    color: #f7941d;
+    margin-right: 0.75rem;
+}
+.service-item h6 {
+    margin: 0;
+    font-weight: 600;
+}
+.service-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+.service-item img {
+    max-width:50%;
+    height:auto; 
+}
+.case-study {
+    border-left: 1px solid #ddd;
+    padding-left: 2rem;
+    flex: 1;
+}
+.case-study img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.case-study h6 {
+    font-weight: 600;
+}
+.case-study p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+.btn-book {
+    background-color: #f7941d;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+@media (max-width: 991.98px) {
+    .dropdown-mega {
+        position: static;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .case-study {
+        border: none;
+        padding: 0;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-mega {
+        display: flex !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn-warning {
     background-color: #F8941D;
     border-color: #F8941D;
@@ -260,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     top: 50%;
     width: 1px;
-    height: calc(100% + 120px);
+    height: calc(100% + 160px);
     background-color: #F8941D;
     z-index: -1;
 }
@@ -348,13 +442,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F8941D;
 }
 
-
-
-
-
-
-
-
 /* Results Section */
 .results-section {
     background-color: #fff; /* White background */
@@ -435,12 +522,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 100%;
     vertical-align: middle;
     text-transform: uppercase;
+} 
+.results-section .results-card .read-case-study::after {
+  content: "";
+  display: block; 
+  width: 45%; 
+  height: 5px; 
+  background-image: url('../../assets/images/Union.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10px; 
 }
-
 .results-section .results-card .read-case-study:hover {
     color: #FFC107;
 }
-
 .results-section .be-our-next-story {
     background-color: #FFC107;
     color: #212529;
@@ -455,15 +550,356 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: 1.8rem;
 }
-
 .results-section .be-our-next-story img {
     max-width: 100px;
     height: auto;
     margin-top: 20px;
 }
 
+/* Dominate Market Section */
+.dominate-market-section {
+    background-color: #FFF3D5; /* Light background */
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 1rem; /* Rounded corners for the entire section */
+    margin: 50px auto; /* Center the section and add margin */
+    max-width: 90%; /* Max width to make it a distinct block */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Subtle shadow */
+}
+.dominate-market-section h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    vertical-align: middle;
+    color: #211D1E;
+}
+.dominate-market-section h2 .dominate {
+    position: relative;
+    z-index: 2331;
+}
+.dominate-market-section h2 .dominate::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url(../../assets/images/shape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 2px;
+    left: 0;
+    z-index: -1;
+}
+.dominate-market-section p {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26.4px;
+    text-align: center;
+    vertical-align: middle;
+    color: #211D1E;
+}
+.dominate-market-section .btn-warning {
+    padding: 15px 40px;
+    background-color: #F8941D;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    z-index: 999;
+}
+
+.dominate-market-section .btn-warning::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    background-image: url(../../assets/images/construction.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -38px;
+    left: 90%;
+    z-index: -1;
+}
+.dominate-market-section .btn-warning::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-image: url(../../assets/images/tipper.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 44px;
+    right: 15%;
+    z-index: -1;
+}
 
 
+
+
+
+/* Testimonial Section */
+.testimonial-section {
+    background-color: #fff; 
+    padding: 80px 0;
+}
+.testimonial-section .header {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    vertical-align: middle;
+    color: #211D1E;
+}
+.testimonial-section .paragraph {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #211D1E;
+}
+.testimonial-carousel .carousel-item {
+    padding-bottom: 50px; /* Space for indicators */
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 30px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    text-align: center;
+    height: 100%; /* Ensure cards are same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card .quote-icon {
+    color: #FFC107;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.testimonial-card p.quote-text {
+    margin-bottom: 20px;
+    color: #211D1E;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
+    font-size: 18px;
+}
+
+.testimonial-card .author-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #FFC107;
+}
+
+.testimonial-card .author-name {
+    color: #211D1E;
+    margin-bottom: 5px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.testimonial-card .author-title {
+    color: #211D1E;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Custom carousel controls */
+.testimonial-carousel .carousel-control-prev,
+.testimonial-carousel .carousel-control-next {
+    width: 5%; /* Smaller width for controls */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-carousel .carousel-control-prev:hover,
+.testimonial-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.testimonial-carousel .carousel-control-prev-icon,
+.testimonial-carousel .carousel-control-next-icon {
+    background-color: #FFC107; /* Warning color for icons */
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1rem; /* Adjust icon size */
+}
+
+.testimonial-carousel .carousel-indicators [data-bs-target] {
+    background-color: #FFC107; /* Warning color for indicators */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Video Testimonial Section */
+.video-testimonial-section {
+    background-color: #fff; /* Light background */
+    padding: 80px 0;
+}
+
+.video-testimonial-section .video-placeholder {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    background-color: #fff; /* Placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem; /* Rounded corners for video placeholder */
+    overflow: hidden;
+}
+
+.video-testimonial-section .video-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-testimonial-section .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.video-testimonial-section .play-button:hover {
+    color: #FFC107;
+}
+
+.video-testimonial-section .lead-text {
+    font-size: 1.15rem;
+    color: #333;
+}
+.video-testimonial-section .author-name {
+    color: #211D1E;
+    margin-bottom: 5px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.video-testimonial-section .quote-text {
+    margin-bottom: 20px;
+    color: #211D1E;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
+    font-size: 18px;
+}
+.video-testimonial-section .author-title {
+    color: #211D1E;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.video-testimonial-section .company-logo {
+    max-height: 40px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Custom carousel controls for video testimonials */
+.video-testimonial-carousel .carousel-control-prev,
+.video-testimonial-carousel .carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.video-testimonial-carousel .carousel-control-prev:hover,
+.video-testimonial-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.video-testimonial-carousel .carousel-control-prev-icon,
+.video-testimonial-carousel .carousel-control-next-icon {
+    background-color: #FFC107; /* Warning color for icons */
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.video-testimonial-carousel .carousel-indicators [data-bs-target] {
+    background-color: #FFC107; /* Warning color for indicators */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+/* FAQ Section */
+.faq-section {
+    /* Background image for FAQ section */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/images/process-section-bg.png') no-repeat center center/cover;
+    background-attachment: fixed; /* Parallax effect for FAQ */
+    padding: 80px 0;
+    color: #fff; /* White text for readability */
+}
+
+.faq-section .header {
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 48px;
+}
+.faq-section .paragraph {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq-section .accordion-header .accordion-button {
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 18px;
+    color: #211D1E;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+}
+.accordion-button:focus {
+    box-shadow: unset;
+}
+.faq-section .accordion-body {
+    font-family: Satoshi;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 16px;
+    color: #211D1E;
+}
 
 
 
@@ -534,234 +970,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Dominate Market Section */
-.dominate-market-section {
-    background-color: #f8f9fa; /* Light background */
-    padding: 60px 0;
-    text-align: center;
-    border-radius: 1rem; /* Rounded corners for the entire section */
-    margin: 50px auto; /* Center the section and add margin */
-    max-width: 90%; /* Max width to make it a distinct block */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Subtle shadow */
-}
-
-.dominate-market-section .btn-warning {
-    padding: 15px 40px;
-    font-size: 1.1rem;
-}
-
-/* Testimonial Section */
-.testimonial-section {
-    background-color: #f8f9fa; /* Light background */
-    padding: 80px 0;
-}
-
-.testimonial-carousel .carousel-item {
-    padding-bottom: 50px; /* Space for indicators */
-}
-
-.testimonial-card {
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 30px;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-    text-align: center;
-    height: 100%; /* Ensure cards are same height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.testimonial-card .quote-icon {
-    color: #FFC107;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.testimonial-card p.quote-text {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.testimonial-card .author-info img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #FFC107;
-}
-
-.testimonial-card .author-name {
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 5px;
-}
-
-.testimonial-card .author-title {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Custom carousel controls */
-.testimonial-carousel .carousel-control-prev,
-.testimonial-carousel .carousel-control-next {
-    width: 5%; /* Smaller width for controls */
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.testimonial-carousel .carousel-control-prev:hover,
-.testimonial-carousel .carousel-control-next:hover {
-    opacity: 1;
-}
-
-.testimonial-carousel .carousel-control-prev-icon,
-.testimonial-carousel .carousel-control-next-icon {
-    background-color: #FFC107; /* Warning color for icons */
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 1rem; /* Adjust icon size */
-}
-
-.testimonial-carousel .carousel-indicators [data-bs-target] {
-    background-color: #FFC107; /* Warning color for indicators */
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-/* Video Testimonial Section */
-.video-testimonial-section {
-    background-color: #f8f9fa; /* Light background */
-    padding: 80px 0;
-}
-
-.video-testimonial-section .video-placeholder {
-    position: relative;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    background-color: #eee; /* Placeholder background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1rem; /* Rounded corners for video placeholder */
-    overflow: hidden;
-}
-
-.video-testimonial-section .video-placeholder img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-testimonial-section .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.video-testimonial-section .play-button:hover {
-    color: #FFC107;
-}
-
-.video-testimonial-section .lead-text {
-    font-size: 1.15rem;
-    color: #333;
-}
-
-.video-testimonial-section .company-logo {
-    max-height: 40px; /* Adjust logo size */
-    width: auto;
-}
-
-/* Custom carousel controls for video testimonials */
-.video-testimonial-carousel .carousel-control-prev,
-.video-testimonial-carousel .carousel-control-next {
-    width: 5%;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.video-testimonial-carousel .carousel-control-prev:hover,
-.video-testimonial-carousel .carousel-control-next:hover {
-    opacity: 1;
-}
-
-.video-testimonial-carousel .carousel-control-prev-icon,
-.video-testimonial-carousel .carousel-control-next-icon {
-    background-color: #FFC107; /* Warning color for icons */
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 1rem;
-}
-
-.video-testimonial-carousel .carousel-indicators [data-bs-target] {
-    background-color: #FFC107; /* Warning color for indicators */
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
 
 
-/* FAQ Section */
-.faq-section {
-    /* Background image for FAQ section */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x1080/666666/FFFFFF?text=FAQ+Background') no-repeat center center/cover;
-    background-attachment: fixed; /* Parallax effect for FAQ */
-    padding: 80px 0;
-    color: #fff; /* White text for readability */
-}
 
-.faq-section h2, .faq-section p.lead {
-    color: #fff; /* Ensure headings are white */
-}
-
-.faq-section .accordion-item {
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border for dark background */
-    margin-bottom: 10px;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
-}
-
-.faq-section .accordion-button {
-    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque for button */
-    color: #fff; /* White text for button */
-    font-weight: 600;
-    padding: 15px 20px;
-    border-radius: 0.5rem;
-    text-align: left;
-    box-shadow: none !important;
-}
-
-.faq-section .accordion-button:not(.collapsed) {
-    color: #FFC107; /* Warning color when open */
-    background-color: rgba(255, 255, 255, 0.05); /* Even more transparent when open */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.faq-section .accordion-body {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05); /* Very transparent for body */
-    color: #f8f9fa; /* Light text for body */
-}
 
 
 /* Footer */
 .footer-new {
-    background-color: #000; /* Black background as per screenshot */
-    color: #fff;
+    background-color: #fff; /* Black background as per screenshot */
+    color: #000;
     padding: 30px 0;
 }
 
@@ -770,7 +987,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-new .footer-nav .nav-link {
-    color: #fff;
+    color: #211D1E;
     font-weight: 500;
     padding: 0 15px;
     transition: color 0.3s ease;
@@ -781,7 +998,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-new .social-icons a {
-    color: #fff;
+    color: #211D1E;
     font-size: 1.2rem;
     margin-left: 20px;
     transition: color 0.3s ease;
