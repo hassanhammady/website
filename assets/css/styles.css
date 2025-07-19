@@ -259,7 +259,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #F8941D;
     border-bottom:1px solid #F8941D;
 }
-
+.ornage-font {
+    font-style: Bold;
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: -3%;
+    color: #F8941D;
+    border-bottom:1px solid #F8941D;
+}
 .hero-section p {
     font-family: 'Satoshi', sans-serif;
     font-weight: 400;
