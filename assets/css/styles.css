@@ -107,7 +107,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .dropdown-mega .case-study {
     border-left: 1px solid #ddd;
-    padding-left: 2rem;
     flex: 1;
 }
 .dropdown-mega .case-study p {
@@ -144,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 0.3s ease;
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
-    line-height: 100%;
+    
     vertical-align: middle;
     text-transform: uppercase;
     font-size: 14px;
@@ -173,8 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-
-
 .btn-book {
     background-color: #f7941d;
     color: #fff;
@@ -195,14 +192,15 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0;
         margin-top: 1rem;
     }
+    .dropdown-mega .case-study {
+        border-left: unset;
+    }
 }
 @media (min-width: 992px) {
     .nav-item.dropdown:hover .dropdown-mega {
         display: flex !important;
     }
 }
-
-
 
 .btn-warning {
     background-color: #F8941D;
@@ -290,6 +288,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/////////////////////////////////************************************* HOME PAGE ************************************//////////////////////
+
 
 /* Proven Results Section */
 .proven-results-section {
@@ -339,9 +339,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: ;
 }
-
-
-
 
 /* Why Agencies Fall Short Section */
 .why-fall-short-section {
@@ -570,32 +567,29 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F8941D;
 }
 
-
-
-
-.card-flip-container {
+.premier-partner-section .card-flip-container {
     perspective: 1000px;
 }
 
-.card-flip-inner {
+.premier-partner-section .card-flip-inner {
     position: relative;
     transition: transform 0.6s ease;
     transform-style: preserve-3d;
 }
 
 /* Flip on hover */
-.card-flip-container:hover .card-flip-inner {
+.premier-partner-section .card-flip-container:hover .card-flip-inner {
     transform: rotateY(180deg);
 }
 
-.card-face {
+.premier-partner-section .card-face {
     position: relative; /* changed from absolute to allow height auto */
     backface-visibility: hidden;
     border-radius: 1rem;
 }
 
 /* Back */
-.card-back {
+.premier-partner-section .card-back {
     background-color: #FFF3D5;
     transform: rotateY(180deg);
     position: absolute;
@@ -670,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 900;
     font-size: 56px;
-    line-height: 100%;
+    
 }
 
 .results-section .results-card .card-text {
@@ -679,7 +673,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 100%;
+    
 }
 
 .results-section .results-card .read-case-study {
@@ -690,7 +684,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 100%;
+    
     vertical-align: middle;
     text-transform: uppercase;
 } 
@@ -828,7 +822,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Satoshi', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    line-height: 100%;
+    
     text-align: center;
     vertical-align: middle;
     color: #211D1E;
@@ -1072,9 +1066,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #211D1E;
 }
 
-
-
-
 /****************************/
 .why-fall-short-section .reason-content h5 {
     color: #FFF9ED;
@@ -1092,7 +1083,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Our Benefits Section */
-.benefit-item {
+/*.benefit-item {
     background-color: #fff;
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1112,40 +1103,13 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background-color: #FFC107; /* Warning color for icons */
+    background-color: #FFC107;
 }
 
 .icon-circle-large i {
     color: #212529;
 }
-
-/* Our Projects Section */
-.our-projects {
-    background-color: #f8f9fa; /* Light background for this section */
-}
-
-.project-card {
-    border-radius: 1rem;
-    overflow: hidden; /* Ensures image corners are rounded */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.project-card img {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-
-
-
-
-
-
+*/
 /* Footer */
 .footer-new {
     background-color: #fff; /* Black background as per screenshot */
@@ -1277,4 +1241,193 @@ h1, h2, h3, h4, h5, h6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+
+/***************** WHY US **************************/
+.outsourced-marketing-team-section {
+    background-color: #211D1E;
+}
+.outsourced-marketing-team-section h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    color: #FEFEFE;
+}
+.outsourced-marketing-team-section p {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+}
+/** Meet the team **/
+
+.meet-the-team-section {
+
+}
+.meet-the-team-section .header-text {
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: #211D1E;
+    font-size: 48px;
+}
+.meet-the-team-section .paragraph-text {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #211D1E;
+}
+
+.meet-the-team-section .team_member_name {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #211D1E;
+}
+.meet-the-team-section .team_member_title {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #211D1E;
+}
+.meet-the-team-section .fa-brands.fa-linkedin {
+    color: #211D1E;
+    font-size: 18px;
+}
+
+/*** core advantgaes ***/
+
+.core-advantgaes {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.core-advantgaes .section-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #211D1E;
+}
+
+.core-advantgaes .section-title span {
+    color: #F8941D;
+}
+
+.core-advantgaes .card-flip-container {
+    background-color: #fff;
+    border-radius: 1rem;
+/*    padding: 30px;*/
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.core-advantgaes .card-flip-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.core-advantgaes .card-flip-container h5 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 130%;
+    color: #211D1E;
+}
+
+.core-advantgaes .card-flip-container p {
+    color: #211D1E;
+    margin-bottom: 20px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.core-advantgaes .card-flip-container .learn-more {
+    font-weight: 600;
+    color: #F8941D;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.core-advantgaes .card-flip-container .learn-more:hover {
+    color: #F8941D;
+}
+
+.core-advantgaes .more-services-btn {
+    margin-top: 50px;
+    padding: 15px 40px;
+    border-color:#F8941D;
+    color: #F8941D;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+}
+.core-advantgaes .more-services-btn:hover {
+    color: #fff;
+    background-color: #F8941D;
+}
+
+.core-advantgaes .card-flip-container {
+    perspective: 1000px;
+}
+
+.core-advantgaes .card-flip-inner {
+    position: relative;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.core-advantgaes .card-flip-container:hover .card-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.core-advantgaes .card-face {
+    position: relative; /* changed from absolute to allow height auto */
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+/* Back */
+.core-advantgaes .card-back {
+    background-color: #FFF3D5;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Match front card height */
+}
+.core-advantgaes .number {
+    position: relative;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #FFF9ED;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: #F8941D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 20px;
 }
