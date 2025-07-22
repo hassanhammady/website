@@ -235,7 +235,13 @@
             </div>
             <div class="row">
                 <!--1st team member -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6 team-member-card" data-aos="fade-up" data-aos-delay="100" 
+                    data-name="George Powell"
+                    data-title="Founder / Strategy Lead"
+                    data-education="education"
+                    data-desc="10+ years building results-driven campaigns across service, tech, and eCommerce. Focused on growth, not gimmicks. 10+ years building results-driven campaigns ac"
+                    data-img="https://via.placeholder.com/300x300"
+                    data-linkedin="https://linkedin.com/in/">
                     <div>
                         <img src="assets/images/Placeholder_Image.png" alt="team member image" class="img-fluid">
                     </div>
@@ -253,15 +259,26 @@
                     </div>
                 </div>
                 <!--2nd team member -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6 team-member-card" data-aos="fade-up" data-aos-delay="100"
+                    data-name="Team Member Name"
+                    data-title="Strategy Lead"
+                    data-education="education"
+                    data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                    data-img="https://via.placeholder.com/300x300"
+                    data-linkedin="https://linkedin.com/in/">
                     <div>
                         <img src="assets/images/Placeholder_Image.png" alt="team member image" class="img-fluid">
                     </div>
                     <h3 class="team_member_name mb-0 pt-3">
-                        George Powell
+                        Team Member Name
                     </h3>
                     <p class="team_member_title">
-                        Founder / Strategy Lead
+                       Strategy Lead
                     </p>
                     <p class="team_member_title mb-0">
                         10+ years building results-driven campaigns across service, tech, and eCommerce. Focused on growth, not gimmicks.
@@ -271,7 +288,18 @@
                     </div>
                 </div>
                 <!--3rd team member -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6 team-member-card" data-aos="fade-up" data-aos-delay="100"
+                    data-name="Team Member Name"
+                    data-title="Strategy Lead"
+                    data-education="education"
+                    data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+                    data-img="https://via.placeholder.com/300x300"
+                    data-linkedin="https://linkedin.com/in/">
                     <div>
                         <img src="assets/images/Placeholder_Image.png" alt="team member image" class="img-fluid">
                     </div>
@@ -289,7 +317,13 @@
                     </div>
                 </div>
                 <!--4th team member -->
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6 team-member-card" data-aos="fade-up" data-aos-delay="100"
+                    data-name="George Powell"
+                    data-title="Founder / Strategy Lead"
+                    data-education="education"
+                    data-desc="10+ years building results-driven campaigns across service, tech, and eCommerce. Focused on growth, not gimmicks. 10+ years building results-driven campaigns ac"
+                    data-img="https://via.placeholder.com/300x300"
+                    data-linkedin="https://linkedin.com/in/">
                     <div>
                         <img src="assets/images/Placeholder_Image.png" alt="team member image" class="img-fluid">
                     </div>
@@ -686,6 +720,78 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="teamMemberModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-column flex-lg-row position-relative">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <!-- Left Column -->
+            <div class="p-5 left-content">
+              <h2 id="modalName" class="fw-bold mb-3 modalName">Member Name</h2>
+              <p id="modalDesc" class="mb-4 modalDesc">Description goes here.</p>
+
+              <!-- Accordion Starts Here -->
+              <div class="accordion" id="accordionInfo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation">
+                        Education
+                    </button>
+                  </h2>
+                  <div id="collapseEducation" class="accordion-collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionInfo">
+                    <div class="accordion-body" id="education">
+                        Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePosition" aria-expanded="false" aria-controls="collapsePosition">
+                      Position
+                    </button>
+                  </h2>
+                  <div id="collapsePosition" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionInfo">
+                    <div class="accordion-body">
+                      Position title goes here.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal">
+                      Personal Life
+                    </button>
+                  </h2>
+                  <div id="collapsePersonal" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionInfo">
+                    <div class="accordion-body">
+                      Hobbies, personal story, or interests could go here.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="pt-4">
+                <a href="#" target="_blank" id="modalLinkedIn" class="text-white me-3">
+                  <i class="fab fa-linkedin fa-xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column (Image) -->
+            <div class="modal-img-container">
+              <img id="modalImg" src="https://via.placeholder.com/250" alt="Team Member" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Back to Top Button -->
     <button id="backToTop" title="Back to Top">
         <i class="bi bi-arrow-up"></i>
@@ -751,6 +857,37 @@
         bsCarousel.prev(); // Go to previous slide
       }, 3000); // 3 seconds
 
+    </script>
+    <!-- Modal Dynamic Fill Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const cards = document.querySelectorAll('.team-member-card');
+
+        cards.forEach(card => {
+          card.addEventListener('click', function () {
+            const name = card.getAttribute('data-name');
+            const title = card.getAttribute('data-title');
+            const desc = card.getAttribute('data-desc');
+            const img = card.getAttribute('data-img');
+            const education = card.getAttribute('data-education');
+            const linkedin = card.getAttribute('data-linkedin') || '#';
+
+            document.getElementById('modalName').textContent = name;
+            // document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            document.getElementById('education').textContent = education;
+            document.getElementById('modalImg').src = img;
+            document.getElementById('modalLinkedIn').href = linkedin;
+
+            // Close all accordion panels
+            const collapseElems = document.querySelectorAll('.accordion-collapse');
+            collapseElems.forEach(el => el.classList.remove('show'));
+
+            const modal = new bootstrap.Modal(document.getElementById('teamMemberModal'));
+            modal.show();
+          });
+        });
+      });
     </script>
 
 

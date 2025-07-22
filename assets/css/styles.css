@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Navbar Customization */
 .navbar {
     transition: background-color 0.3s ease;
-    z-index: 99999; /* Ensure it's above other content */
+    z-index: 999; /* Ensure it's above other content */
     position: sticky; /* Sticky navbar */
     top: 0;
 }
@@ -1329,6 +1329,91 @@ h1, h2, h3, h4, h5, h6 {
 .meet-the-team-section .fa-brands.fa-linkedin {
     color: #211D1E;
     font-size: 18px;
+}
+.team-member-card {
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+.modalName {
+    font-weight: 700;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #FEFEFE;
+}
+.modalDesc {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color:#FEFEFE;
+}
+.modal-body {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal-body .left-content {
+    color: white;
+}
+
+.text-warning {
+    color: #F8941D !important;
+}
+
+.modal-img-container {
+    background-color: #e6e6e6;
+    min-width: 40%;
+    maxwidth: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-img-container img {
+    max-height: 400px;
+    padding: 2rem;
+    border-radius: 50px;
+}
+
+.modal-body .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    padding-left: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #f90;
+    background-color: transparent;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.accordion-body {
+    padding-left: 0;
+    padding-top: 0.5rem;
+    font-size: 18px;
+    font-family: 'Satoshi', sans-serif;
+    color: #FEFEFE;
 }
 
 /*** core advantgaes ***/
