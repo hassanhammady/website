@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Process</title>
+    <title> Gallery</title>
     <!-- AOS Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
     <!-- Google Fonts - Plus Jakarta Sans font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +59,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown position-static">
-                      <a class="nav-link dropdown-toggle" href="why_us.html" id="whyUsDropdown" role="button">
+                      <a class="nav-link dropdown-toggle active" href="why_us.html" id="whyUsDropdown" role="button">
                         Why Us
                       </a>
                       <ul class="dropdown-menu">
@@ -152,16 +154,16 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="our_process.html">Our Process</a>
+                        <a class="nav-link" href="our_process.html">Our Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="case_studies.html">Case Studies</a>
+                        <a class="nav-link" href="#">Case Studies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Resources</a>
+                        <a class="nav-link" href="#">Resources</a>
                     </li>
                 </ul>
                 <button class="btn btn-warning ms-lg-3 rounded-pill px-4 py-2 d-none d-lg-block">Book a Call <i class="fas fa-arrow-right ms-2"></i></button>
@@ -169,198 +171,126 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section align-items-center text-white">
+    <section class="hero-section gellery-blogs">
         <div class="container-fluid p-lg-5">
-            <div class="row align-items-center pt-lg-5 pt-3">
-                <div class="col-lg-7 text-lg-start text-center align-self-center" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="pe-lg-4">
-                        <h1 class="mb-3">Our <span class="ornage-font border-0">Proven Process</span> to Help You Grow</h1>
-                        <p class="mb-4 text-left">
-                            We don’t just build campaigns — we build momentum. Our streamlined, step-by-step process combines strategy, creativity, and data to give your brand the clarity, tools, and traction it needs to scale. From discovery to execution and beyond, we’re with you every step of the way.
-                        </p>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Strategy-First Approach</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Fully Custom Plans</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Data-Driven Decisions</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Full-Service Execution</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Transparent Partnership</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p>Built for Long-Term Growth</p>
-                        </div>
-                        <button type="button" class="btn btn-warning btn-lg rounded-pill px-5 py-3 me-3 mb-3 mb-lg-0">Let’s Get Started <i class="fas fa-arrow-right ms-2"></i></button>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-none d-lg-block text-center" data-aos="flip-up" data-aos-delay="100">
-                    <!-- Placeholder for image in hero section -->
-                    <img src="assets/images/Placeholder_Image.png" alt="Hero Illustration" class="img-fluid rounded-4 shadow-lg">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Why Agencies Fall Short Section -->
-    <section class="why-fall-short-section py-3">
-        <div class="container-fluid p-lg-5 py-5">
-            <div class="row justify-content-center top-heading" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-11 text-center">
-                    <h2 class="fw-bold mb-5">Our Process</h2>
-                    <p class="text-center">A Strategic, Collaborative, and Transparent Approach to Digital Marketing</p>
-                    <p class="text-center mb-5">We believe real growth starts with a plan — not guesswork. Whether you're a startup looking for a foundation or an established business needing to scale, our full-service approach is designed to deliver clarity, consistency, and long-term ROI.</p>
-                </div>
-            </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="0">1</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="0">
-                            <h5 class="fw-bold">Discovery & Deep Dive</h5>
-                            <p>We Listen First. Always.</p>
-                            <p>Before we recommend anything, we dig in. We take time to understand your brand, business model, current marketing, competitors, and most importantly — your goals.</p>
-                            <p>
-                                During this phase, we:
-                                <ul>
-                                    <li> Conduct a brand & marketing audit</li>
-                                    <li> Analyze your digital footprint & website performance</li>
-                                    <li> Identify strengths, weaknesses & gaps</li>
-                                    <li> Understand your audience & market position</li>
-                                    <li> Listen to your long-term vision</li>
-                                </ul>
-                            </p>
-                        </div>
+                <div class="col-lg-8 text-lg-start text-center align-self-center" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h1 class="mb-0"><span class="ornage-font border-0">Lorem ipsum </span>dolor sit vetr lorem ipsum sot</h1>
+                    <p class="mb-4 text-center">
+                        Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet Lorem ipsum dolor sit vet.
+                    </p>
+                </div>
+                <div class="col-xl-7 col-lg-9 col-12">
+                    <div class="text-center filter-btns p-2 rounded">
+                        <button class="btn btn-orange active" data-filter="all">View all</button>
+                        <button class="btn btn-orange" data-filter="business">Business card</button>
+                        <button class="btn btn-orange" data-filter="logo">Logo Design</button>
+                        <button class="btn btn-orange" data-filter="website">Website Design</button>
+                        <button class="btn btn-orange" data-filter="brochure">Brochure Design</button>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="100">2</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="100">
-                            <h5 class="fw-bold"> Strategy Development</h5>
-                            <p>Custom Strategy. No Cookie Cutters.</p>
-                            <p>Based on our discovery, we craft a personalized marketing strategy tailored to your business. Whether you need a full rebrand, a lead generation machine, or a smarter content plan, we make sure everything aligns with your growth goals.</p>
-                            <p>
-                                This includes:
-                                <ul>
-                                    <li>Brand positioning & messaging</li>
-                                    <li>Website or landing page strategy</li>
-                                    <li>SEO & keyword planning</li>
-                                    <li>Paid advertising roadmap (Google, Meta, etc.)</li>
-                                </ul>
-                            </p>
+            <div class="row pswp-gallery" id="gallery">
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="logo">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="Logo"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-6 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="200">3</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="200">
-                            <h5 class="fw-bold">Build & Launch</h5>
-                            <p>Execution with Excellence.</p>
-                            <p>Once we have alignment on the strategy, we move into build-out and deployment. You’ll have a dedicated project manager and full access to our team of designers, developers, copywriters, and marketers.</p>
-                            <p>
-                                This phase may include:
-                                <ul>
-                                    <li>Website design & development</li>
-                                    <li>Brand identity design (logos, graphics, style guides)</li>
-                                    <li>Landing page creation</li>
-                                    <li>Paid ads setup & tracking</li>
-                                    <li>SEO optimization (technical & on-page)</li>
-                                </ul>
-                            </p>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="business">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="business"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-6 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="300">4</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="300">
-                            <h5 class="fw-bold">Test, Measure & Optimize</h5>
-                            <p>Marketing Without Measurement Is Guessing.</p>
-                            <p>After launch, we don’t walk away. We monitor your campaigns, analyze performance, and optimize continually. Every strategy is treated as a living system — always improving, always evolving.</p>
-                            <p>
-                                What we monitor & optimize:
-                                <ul>
-                                    <li>Conversion rates</li>
-                                    <li>SEO rankings & search visibility</li>
-                                    <li>Cost per lead/acquisition</li>
-                                    <li>Ad performance (clicks, impressions, ROAS)</li>
-                                    <li>Email & funnel analytics</li>
-                                </ul>
-                            </p>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="website">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="website"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="400">5</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="400">
-                            <h5 class="fw-bold">Collaborate, Support & Grow</h5>
-                            <p>You’re Not Just a Client — You’re a Partner.</p>
-                            <p>We believe in being proactive, responsive, and fully transparent. You’ll get regular check-ins, detailed reports, and a team that genuinely cares about your success. As your business grows, we’ll grow with you — adapting the strategy as needed.</p>
-                            <p>
-                                You’ll receive:
-                                <ul>
-                                    <li>Monthly or bi-weekly strategy calls</li>
-                                    <li>Transparent reporting dashboards</li>
-                                    <li>On-demand support (yes, real humans)</li>
-                                    <li>Access to our full marketing team</li>
-                                    <li>Insights, suggestions & ongoing innovation</li>
-                                </ul>
-                            </p>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="brochure">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="brochure"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 mx-auto">
-                    <div class="reason-item">
-                        <div class="reason-number" data-aos="fade-up-right" data-aos-delay="400">6</div>
-                        <div class="reason-content" data-aos="fade-up-left" data-aos-delay="400">
-                            <h5 class="fw-bold">Collaborate, Support & Grow</h5>
-                            <p>You’re Not Just a Client — You’re a Partner.</p>
-                            <p>We believe in being proactive, responsive, and fully transparent. You’ll get regular check-ins, detailed reports, and a team that genuinely cares about your success. As your business grows, we’ll grow with you — adapting the strategy as needed.</p>
-                            <p>
-                                You’ll receive:
-                                <ul>
-                                    <li>Monthly or bi-weekly strategy calls</li>
-                                    <li>Transparent reporting dashboards</li>
-                                    <li>On-demand support (yes, real humans)</li>
-                                    <li>Access to our full marketing team</li>
-                                    <li>Insights, suggestions & ongoing innovation</li>
-                                </ul>
-                            </p>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="logo">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="Logo"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="business">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="business"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="website">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="website"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="brochure">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="brochure"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 card-item fade-scale mt-3" data-category="brochure">
+                    <a href="assets/images/process-section-bg.png" data-pswp-width="800" data-pswp-height="600" target="_blank" class="img-fluid">
+                        <div class="card position-relative">
+                            <img src="assets/images/process-section-bg.png" alt="brochure"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem Ipsum</h5>
+                                <p class="card-text">Lorem ipsum dolor sit vet</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>  
         </div>
     </section>
 
@@ -415,6 +345,10 @@
     <button id="backToTop" title="Back to Top">
         <i class="bi bi-arrow-up"></i>
     </button>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
     <!-- jQuery CDN (v3.7.1) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -422,8 +356,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- PhotoSwipe JS -->
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js" type="module"></script>
     <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+        });
+        lightbox.init();
+    </script>
+
+    <script>
+        document.querySelectorAll('[data-filter]').forEach(button => {
+          button.addEventListener('click', function () {
+            const filter = this.getAttribute('data-filter');
+
+            // Remove 'active' class from all buttons
+            document.querySelectorAll('[data-filter]').forEach(btn => {
+              btn.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked button
+            this.classList.add('active');
+
+            // Filter the cards
+            const cards = document.querySelectorAll('.card-item');
+            cards.forEach(card => {
+              const match = filter === 'all' || card.dataset.category === filter;
+              card.style.display = match ? 'block' : 'none';
+              if (match) {
+                card.classList.add('fade-scale');
+              } else {
+                card.classList.remove('fade-scale'); // Optionally remove animation class if not matching
+              }
+            });
+          });
+        });
+    </script>
     <script>
       AOS.init({
         duration: 800, // animation duration in ms
@@ -483,54 +457,6 @@
             });
         });
     </script>
-    <script>
-      // Auto-scroll backwards (left to right)
-      const carousel = document.querySelector('#vendorsCarousel');
-      const testimonialCarousel = document.querySelector('#testimonialCarousel');
-      const videoTestimonialCarousel = document.querySelector('#videoTestimonialCarousel');
-
-      const bsCarousel = new bootstrap.Carousel(carousel, {
-        interval: false,
-        ride: false,
-        pause: false,
-        wrap: true
-      });
-      setInterval(() => {
-        bsCarousel.prev(); // Go to previous slide
-      }, 3000); // 3 seconds
-
-      const bsCarouse2 = new bootstrap.Carousel(testimonialCarousel, {
-        interval: false,
-        ride: false,
-        pause: false,
-        wrap: true
-      });
-      setInterval(() => {
-        bsCarouse2.prev(); // Go to previous slide
-      }, 3000); // 3 seconds
-
-      const bsCarouse3 = new bootstrap.Carousel(videoTestimonialCarousel, {
-        interval: false,
-        ride: false,
-        pause: true,
-        wrap: true
-      });
-      // setInterval(() => {
-      //   bsCarouse3.prev(); // Go to previous slide
-      // }, 3000); // 3 seconds
-    </script>
-
-    <!-- show more services -->
-    <script>
-      $(document).ready(function () {
-        $('#toggleServices').click(function () {
-          $('.extra-services').stop().slideToggle(400);
-          let btn = $(this);
-          btn.text(btn.text() === 'More Services' ? 'Show Less' : 'More Services');
-        });
-      });
-    </script>
-
 
     </body>
 </html>

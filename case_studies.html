@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services Overview</title>
+    <title>Case Studies</title>
     <!-- AOS Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts - Plus Jakarta Sans font -->
@@ -15,6 +15,8 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link Swiper's js Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <!-- Bootstrap CSS CDN (v5.3.3) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- style file -->
@@ -65,7 +67,7 @@
                       </ul>
                     </li>
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle active" aria-current="page" href="services_overview.html" id="servicesDropdown" role="button">
+                        <a class="nav-link dropdown-toggle" href="services_overview.html" id="servicesDropdown" role="button">
                             Services Overview
                         </a>
                         <div class="dropdown-mega container-fluid">
@@ -155,7 +157,7 @@
                         <a class="nav-link" href="our_process.html">Our Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="case_studies.html">Case Studies</a>
+                        <a class="nav-link active" aria-current="page" href="case_studies.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
@@ -175,159 +177,286 @@
             <div class="row align-items-center pt-lg-5 pt-3">
                 <div class="col-lg-7 text-lg-start text-center align-self-center" data-aos="zoom-in-up" data-aos-delay="100">
                     <div class="pe-lg-4">
-                        <h1 class="mb-4">Baked-In Strategy. <br><span class="ornage-font">Fresh Results.</span></h1>
-                        <p class="mb-2 text-left">
-                            Our Services Are the Bread and Butter of Digital Success.
+                        <h1 class="mb-4"> <span class="ornage-font">Real Results.</span> Real Businesses.Real Growth.</h1>
+                        <p class="mb-2 text-start description_text">
+                            Our Work.
                         </p>
-                        <p class="mb-4 text-left">
-                            Explore everything we do to help your business rise, slice through the competition, and get that dough.
+                        <p class="mb-4 text-start">
+                            We don’t just talk strategy — we deliver measurable results. Here’s a look at how we’ve helped businesses across industries level up their marketing, expand their reach, and achieve real growth.
                         </p>
                         <button type="button" class="btn btn-warning btn-lg rounded-pill px-5 py-3 me-3 mb-3 mb-lg-0">Let’s Get Started <i class="fas fa-arrow-right ms-2"></i></button>
                     </div>
                 </div>
-                <div class="col-lg-5 d-none d-lg-block text-center" data-aos="flip-up" data-aos-delay="100">
+                <div class="col-lg-5 d-none d-lg-block text-center align-self-center" data-aos="flip-up" data-aos-delay="100">
                     <!-- Placeholder for image in hero section -->
-                    <img src="assets/images/video_placeholder.png" alt="Video" class="img-fluid rounded-4 shadow-lg">
+                    <img src="assets/images/Placeholder_Image.png" alt="Hero Illustration" class="img-fluid rounded-4 shadow-lg">
                 </div>
             </div>
         </div>
     </header>
 
-
-    <!-- Premier Partner Section -->
-    <section class="premier-partner-section py-3">
+    <section class="results-section py-3">
         <div class="container-fluid p-lg-5">
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-11 text-center">
-                    <h2 class="section-title mb-5">Your <span>Premier</span> Manufacturing <br> Partner for E-Commerce Brands</h2>
+            <div class="row">
+                <div class="col-lg-8 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h2 class="mb-4 text-start">Website Redesign & <br> Optimization</h2>
+                    <p class="text-start">We redesigned the website from the ground up to improve structure, speed, and conversions — all built for mobile-first performance and SEO.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <div class="d-flex gap-2">
+                            <div>
+                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                            </div>
+                            <p class="text-start">Fast load times</p>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div>
+                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                            </div>
+                            <p class="text-start">Clear calls-to-action</p>
+                        </div>
+                        <div class="d-flex gap-2 mb-3">
+                            <div>
+                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                            </div>
+                            <p class="text-start">On-brand visuals</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                              <img src="assets/images/bullhorn.png" alt="Icon" class="img-fluid">
-                            </div>
-                            <h5 class="">Paid Advertising</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-5 text-start">
+                        <img src="assets/images/Placeholder_Image.png" class="img-fluid w-50" alt="placeholder image">
+                    </div>
+                    <div>
+                        <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
+    <section class="results-section py-3">
+        <div class="container-fluid p-lg-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image" data-aos="zoom-in-up" data-aos-delay="100">
+                </div>
+                <div class="col-lg-7 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="px-lg-4">
+                        <h2 class="mb-4 text-start">Performance Results</h2>
+                        <p class="text-start">From invisibility to visibility — we helped [Client] rise in the rankings and dominate local search.</p>
+                        <p class="text-start mt-4 description_text">SEO Highlights:</p>
+                        <div class="d-flex gap-2 mt-4">
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                                </div>
+                                <p class="text-start">Ranked #3 for “[Primary Keyword]”</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <div>
+                                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                                </div>
+                                <p class="text-start">182% growth in organic traffic</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div>
+                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                            </div>
+                            <p class="text-start">12+ keywords in the top 10 within 4 months</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                                <img src="assets/images/logo.png" alt="Logo Design Icon" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold">Logo Design</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
+            </div>
+        </div>
+    </section>
 
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
+    <!-- Testimonial Section -->
+    <section class="testimonial-section pt-3 pb-0">
+        <div class="container-fluid p-lg-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-10" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h2 class="mb-4 header">From Frustration to Full Calendars: Real Clients. Real Growth.</h2>
+                    <p class="paragraph">We don’t just promise results — we deliver them. Hear from paving and construction company owners who trusted us to take their marketing to the next level, and are now booking more jobs, seeing higher ROI, and finally getting the leads they deserve.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- Swiper -->
+                <div class="swiper clients_swipper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide m-lg-3 m-2">
+                            <div class="testimonial-card border">
+                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
+                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                <div class="author-info">
+                                    <p class="author-name mb-0">Derrick Malone</p>
+                                    <p class="author-title">CEO at Wright Construction Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide m-lg-3 m-2">
+                            <div class="testimonial-card border">
+                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
+                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                <div class="author-info">
+                                    <p class="author-name mb-0">Derrick Malone</p>
+                                    <p class="author-title">CEO at Wright Construction Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide m-lg-3 m-2">
+                            <div class="testimonial-card border">
+                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
+                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                <div class="author-info">
+                                    <p class="author-name mb-0">Derrick Malone</p>
+                                    <p class="author-title">CEO at Wright Construction Services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide m-lg-3 m-2">
+                            <div class="testimonial-card border">
+                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
+                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                <div class="author-info">
+                                    <p class="author-name mb-0">Derrick Malone</p>
+                                    <p class="author-title">CEO at Wright Construction Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination d-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New Testimonial Section (Video Testimonials) -->
+    <section class="video-testimonial-section pb-3 pt-0">
+        <div class="container pb-5 pt-0">
+            <div id="videoTestimonialCarousel" class="carousel slide video-testimonial-carousel" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner" data-aos="zoom-in-up" data-aos-delay="100">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <div class="video-placeholder rounded-4 overflow-hidden shadow-sm">
+                                    <img src="https://placehold.co/600x400/CCCCCC/666666?text=Play+Video" alt="Video Testimonial Placeholder" class="img-fluid">
+                                    <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center text-md-start">
+                                <div class="stars mb-3">
+                                    <img src="assets/images/Stars.png" alt="Rating Stars" class="img-fluid">
+                                </div>
+                                <p class="quote-text mb-4">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                <div class="d-flex gap-2">
+                                    <div style="border-right: 2px solid #211D1E;" class="pe-3">
+                                        <h5 class="author-name mb-1">Emily Johnson</h5>
+                                        <p class="author-title mb-0">Marketing Director, Global Corp</p>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <img src="assets/images/industry2-logo.png" alt="Company Logo" class="img-fluid company-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 (Duplicate for carousel effect) -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <div class="video-placeholder rounded-4 overflow-hidden shadow-sm">
+                                    <img src="https://placehold.co/600x400/AAAAAA/333333?text=Play+Video+2" alt="Video Testimonial Placeholder" class="img-fluid">
+                                    <div class="play-button"><i class="fas fa-play-circle"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center text-md-start">
+                                <div class="stars mb-3">
+                                    <img src="assets/images/Stars.png" alt="Rating Stars" class="img-fluid">
+                                </div>
+                                <p class="quote-text mb-4">"Working with Miost Marketing has been a game-changer for our business. Their strategic insights and execution are truly exceptional!"</p>
+                                <div class="d-flex gap-2">
+                                    <div style="border-right: 2px solid #211D1E;" class="pe-3">
+                                        <h5 class="author-name mb-1">Emily Johnson</h5>
+                                        <p class="author-title mb-0">Marketing Director, Global Corp</p>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <img src="assets/images/industry2-logo.png" alt="Company Logo" class="img-fluid company-logo">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                                <img src="assets/images/curve.png" alt="Graphic Design Icon" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold">Graphic Design</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev d-none" type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none" type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators d-none">
+                    <button type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
+    <!-- services icons -->
+    <section class="testimonial-section pt-3 pb-0">
+        <div class="container pt-5 pb-0">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-10" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h2 class="mb-4 header text-center">Services Included</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <img src="assets/images/branding.png" alt="branding icon" class="img-fluid">
+                    <p class="mb-0 mt-3 services_icons_title">Branding & Identity</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <img src="assets/images/web_design.png" alt="dollar sign icon" class="img-fluid">
+                    <p class="mb-0 mt-3 services_icons_title">Website Design & Development</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <img src="assets/images/google_ads.png" alt="google ads icon" class="img-fluid">
+                    <p class="mb-0 mt-3 services_icons_title">Google Ads Setup & Management</p>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <img src="assets/images/seo.png" alt="seo icon" class="img-fluid">
+                    <p class="mb-0 mt-3 services_icons_title">SEO & Content Optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section py-3">
+        <div class="container-fluid p-lg-5">
+            <div class="row">
+                <div class="col-lg-6 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="px-lg-4">
+                        <h2 class="mb-4 text-start">The Outcome</h2>
+                        <p class="text-start description_text">More visibility. Better leads. A brand they’re proud of.</p>
+                        <p class="text-start mt-4">This project is a clear example of how a unified marketing strategy can drive real, measurable growth — and leave a lasting impression.</p>
+                        <div class="text-start mt-4">
+                            <button type="button" class="btn btn-warning btn-lg rounded-pill px-5 py-3 me-3 mb-3 mb-lg-0">Let’s Get Started <i class="fas fa-arrow-right ms-2"></i></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 extra-services">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                                <img src="assets/images/social-media.png" alt="Social Media Icon" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold">Social Media Marketing</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
-
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 extra-services">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                                <img src="assets/images/print.png" alt="Printing Services Icon" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold">Printing Services</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
-
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 extra-services">
-                    <div class="card-flip-container position-relative" data-aos="zoom-in-up" data-aos-delay="100">
-                        <div class="card-flip-inner">
-                          <!-- Front -->
-                          <div class="card-face card-front bg-white rounded-3 shadow p-4">
-                            <div class="icon-wrapper mb-4">
-                                <img src="assets/images/coding.png" alt="Web Design Icon" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold">Web Design</h5>
-                            <p>Get your business in front of your ideal prospects and turn them into customers through successful SEO strategies.</p>
-                          </div>
-
-                          <!-- Back -->
-                          <div class="card-face card-back rounded text-white p-4 d-flex flex-column justify-content-center text-center">
-                            <h5 class="">Back Side</h5>
-                            <p>More details shown on hover.</p>
-                            <a href="#" class="learn-more text-decoration-none">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
-                          </div>
-                        </div>
-                    </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image" data-aos="zoom-in-up" data-aos-delay="100">
                 </div>
             </div>
         </div>
@@ -338,8 +467,8 @@
         <div class="container-fluid p-lg-5">
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h2 class="header mb-4">Frequently Asked Questions</h2>
-                    <p class="paragraph">Got questions? We’ve got answers. Below are some of the most common things clients ask us when planning their web design project. From timelines and pricing to platforms and SEO, we’re here to make the process clear, smooth, and stress-free.</p>
+                    <h2 class="header mb-4">Got Questions? We’ve Got Answers.</h2>
+                    <p class="paragraph">We know hiring a marketing agency is a big decision — especially when you’ve been burned before. That’s why we’re transparent, fast, and focused on your success. Here are answers to the most common questions paving companies ask us before getting started.</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -411,6 +540,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="footer-new" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="container-fluid px-lg-5">
@@ -469,6 +599,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swipper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Initialize Swiper -->    
     <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
     <script>
@@ -480,6 +612,20 @@
         }
       });
     </script>
+    <script>
+      // Auto-scroll backwards (left to right)
+      const videoTestimonialCarousel = document.querySelector('#videoTestimonialCarousel');
+      const bsCarouse3 = new bootstrap.Carousel(videoTestimonialCarousel, {
+        interval: false,
+        ride: false,
+        pause: true,
+        wrap: true
+      });
+      // setInterval(() => {
+      //   bsCarouse3.prev(); // Go to previous slide
+      // }, 3000); // 3 seconds
+    </script>
+
     <script>
       // Mobile toggle for Services Overview
       const dropdown = document.querySelector('.dropdown');
@@ -530,5 +676,59 @@
             });
         });
     </script>
+    <script>
+      // Auto-scroll backwards (left to right)
+      const testimonialCarousel = document.querySelector('#testimonialCarousel');
+      const videoTestimonialCarousel = document.querySelector('#videoTestimonialCarousel');
+
+      const bsCarouse2 = new bootstrap.Carousel(testimonialCarousel, {
+        interval: false,
+        ride: false,
+        pause: false,
+        wrap: true
+      });
+      setInterval(() => {
+        bsCarouse2.prev(); // Go to previous slide
+      }, 3000); // 3 seconds
+
+      const bsCarouse3 = new bootstrap.Carousel(videoTestimonialCarousel, {
+        interval: false,
+        ride: false,
+        pause: true,
+        wrap: true
+      });
+      // setInterval(() => {
+      //   bsCarouse3.prev(); // Go to previous slide
+      // }, 3000); // 3 seconds
+    </script>
+
+    <!-- show more services -->
+    <script>
+      $(document).ready(function () {
+        $('#toggleServices').click(function () {
+          $('.extra-services').stop().slideToggle(400);
+          let btn = $(this);
+          btn.text(btn.text() === 'More Services' ? 'Show Less' : 'More Services');
+        });
+      });
+    </script>
+
+    <script>
+        const clients_swipper = new Swiper(".clients_swipper", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                reverseDirection: true, // RIGHT to LEFT
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
     </body>
 </html>
