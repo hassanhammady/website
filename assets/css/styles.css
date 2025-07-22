@@ -390,6 +390,9 @@ h1, h2, h3, h4, h5, h6 {
 .vendors_swipper .swiper-slide {
     width: 25%;
 }
+.clients_swipper-onecard .swiper-slide {
+    width: 95%;
+}
 .clients_swipper .swiper-slide {
     width: 33%;
 }
@@ -1909,6 +1912,15 @@ h1, h2, h3, h4, h5, h6 {
         width: 95%;
     }
 
+    .pricing-navpills .nav-pills .nav-item {
+        width: 100%;
+    }
+    .pricing-navpills .nav-pills .nav-link {
+        font-size: 18px;
+    }
+    .pricing-navpills .tab-pane p,.pricing-navpills .tab-pane ul li {
+        font-size: 18px;
+    }
     .footer-image-col {
         margin-bottom: 30px;
     }
@@ -2034,7 +2046,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .vendors_swipper .swiper-slide,
-    .clients_swipper .swiper-slide {
+    .clients_swipper .swiper-slide,
+    .clients_swipper-onecard .swiper-slide {
         width: 95%;
     }
 
