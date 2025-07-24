@@ -1909,6 +1909,11 @@ h1, h2, h3, h4, h5, h6 {
     .modalName {
         font-size: 28px;
     }
+    
+
+    .modal .accordion-button {
+        font-size: 18px;
+    }
     .navbar-nav .nav-link {
         padding: 10px 15px;
     }
