@@ -1389,7 +1389,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
 }
 
-.accordion-button {
+.modal .accordion-button {
     background-color: transparent;
     color: #fff;
     font-weight: 600;
@@ -1397,18 +1397,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
 }
 
-.accordion-button:not(.collapsed) {
+.modal .accordion-button:not(.collapsed) {
     color: #f90;
     background-color: transparent;
 }
 
-.accordion-item {
+.modal .accordion-item {
     background-color: transparent;
     border: none;
     margin-bottom: 1rem;
 }
 
-.accordion-body {
+.modal .accordion-body {
     padding-left: 0;
     padding-top: 0.5rem;
     font-size: 18px;
