@@ -72,12 +72,3 @@ $(document).ready(function() {
         }
     });
 });
-
-// animate elements on scroll
-AOS.init({
-    duration: 800, // animation duration in ms
-    once: false, // whether animation should happen only once
-    disable: function () {
-        return window.innerWidth < 768; // Disable below 768px
-    }
-});
