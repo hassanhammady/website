@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies</title>
+    <title>Contact</title>
     <!-- AOS Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts - Plus Jakarta Sans font -->
@@ -21,9 +21,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- style file -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Top Info Bar -->
     <div class="top-bar py-2">
         <div class="container justify-content-between align-items-center">
@@ -56,7 +55,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown position-static">
                       <a class="nav-link dropdown-toggle" href="why_us.html" id="whyUsDropdown" role="button">
@@ -157,7 +156,7 @@
                         <a class="nav-link" href="our_process.html">Our Process</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="case_studies.html">Case Studies</a>
+                        <a class="nav-link" href="case_studies.html">Case Studies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
@@ -171,300 +170,142 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section align-items-center text-white">
-        <div class="container-fluid p-lg-5">
-            <div class="row align-items-center pt-lg-5 pt-3">
-                <div class="col-lg-7 text-lg-start text-center align-self-center" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="pe-lg-4">
-                        <h1 class="mb-4"> <span class="ornage-font">Real Results.</span> Real Businesses.Real Growth.</h1>
-                        <p class="mb-2 text-start description_text">
-                            Our Work.
-                        </p>
-                        <p class="mb-4 text-start">
-                            We don’t just talk strategy — we deliver measurable results. Here’s a look at how we’ve helped businesses across industries level up their marketing, expand their reach, and achieve real growth.
-                        </p>
-                        <button type="button" class="btn btn-warning btn-lg rounded-pill px-5 py-3 me-3 mb-3 mb-lg-0">Let’s Get Started <i class="fas fa-arrow-right ms-2"></i></button>
-                    </div>
+    <section class="contact">
+      <div class="container-fluid px-lg-5 contact-section">
+        <div class="row g-5 align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 left-column">
+            <div class="highlight-badge">Get in Touch for Expert Marketing Support</div>
+            <h1>We’re Here to Help</h1>
+            <p class="mt-3">
+              Have questions or need guidance? Our team is ready to support you in elevating your brand,
+              optimizing your marketing strategy, and helping your business grow. Reach out today,
+              and let’s start building something great — together.
+            </p>
+            <div class="d-flex gap-2 hero-section text-start justify-content-start">
+                <div class="align-self-center">
+                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
                 </div>
-                <div class="col-lg-5 d-none d-lg-block text-center align-self-center" data-aos="flip-up" data-aos-delay="100">
-                    <!-- Placeholder for image in hero section -->
-                    <img src="assets/images/Placeholder_Image.png" alt="Hero Illustration" class="img-fluid rounded-4 shadow-lg">
-                </div>
+                <p class="mb-0">Real People. Real Support.</p>
             </div>
+            <div class="d-flex gap-2 hero-section text-start justify-content-start">
+                <div class="align-self-center">
+                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                </div>
+                <p class="mb-0">Fast Responses. No Fluff.</p>
+            </div>
+            <div class="d-flex gap-2 mb-3 hero-section text-start justify-content-start">
+                <div class="align-self-center">
+                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
+                </div>
+                <p class="mb-0">Let’s Build Something Together.</p>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <div class="col-lg-6">
+            <div class="contact-card shadow-sm">
+              <h4 class="mb-4 fw-bold text-center">Contact Us</h4>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Full Name*</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold">Email*</label>
+                    <input type="email" class="form-control" placeholder="Enter your email" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold">Phone Number</label>
+                    <input type="tel" class="form-control" placeholder="+1 (555) 000–0000" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label fw-semibold">Message</label>
+                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="send-btn">Send us a message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <section class="results-section py-3">
-        <div class="container-fluid p-lg-5">
+    <section class="py-5 location">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
             <div class="row">
-                <div class="col-lg-8 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h2 class="mb-4 text-start">Website Redesign & <br> Optimization</h2>
-                    <p class="text-start">We redesigned the website from the ground up to improve structure, speed, and conversions — all built for mobile-first performance and SEO.</p>
-                    <div class="d-flex gap-3 mt-4">
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p class="text-start">Fast load times</p>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p class="text-start">Clear calls-to-action</p>
-                        </div>
-                        <div class="d-flex gap-2 mb-3">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p class="text-start">On-brand visuals</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-2">
+                <img src="assets/images/email.png" alt="Email Icon" class="img-fluid">
+              </div>
+              <div class="col-10">
+                <h3>
+                  Email
+                </h3>
+                <p class="">
+                  Have a question or want to chat strategy?
+                </p>
+                <p class="">
+                  Email: <a class="text-decoration-none" href="mailto:support@pavetheway.com">support@pavetheway.com</a>
+                </p>
+                <p class="">
+                  We’ll get back to you within one business day.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4">
             <div class="row">
-                <div class="col-lg-6">
-                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image">
-                </div>
-                <div class="col-lg-6">
-                    <div class="mb-5 text-start">
-                        <img src="assets/images/Placeholder_Image.png" class="img-fluid w-50" alt="placeholder image">
-                    </div>
-                    <div>
-                        <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image">
-                    </div>
-                </div>
+              <div class="col-2">
+                <img src="assets/images/phone.png" alt="phone Icon" class="img-fluid">
+              </div>
+              <div class="col-10">
+                <h3>
+                  Phone
+                </h3>
+                <p class="">
+                  Want to speak with someone directly?
+                </p>
+                <p class="">
+                  Phone: <a class="text-decoration-none" href="tel:+15551234567">+1 (555) 123-4567</a>
+                </p>
+                <p class="">
+                  Speak directly with a member of our team.
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <section class="results-section py-3">
-        <div class="container-fluid p-lg-5">
+          </div>
+          <div class="col-lg-4">
             <div class="row">
-                <div class="col-lg-5">
-                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image" data-aos="zoom-in-up" data-aos-delay="100">
-                </div>
-                <div class="col-lg-7 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="px-lg-4">
-                        <h2 class="mb-4 text-start">Performance Results</h2>
-                        <p class="text-start">From invisibility to visibility — we helped [Client] rise in the rankings and dominate local search.</p>
-                        <p class="text-start mt-4 description_text">SEO Highlights:</p>
-                        <div class="d-flex gap-2 mt-4">
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                                </div>
-                                <p class="text-start">Ranked #3 for “[Primary Keyword]”</p>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <div>
-                                    <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                                </div>
-                                <p class="text-start">182% growth in organic traffic</p>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <div>
-                                <img src="assets/images/check-mark.png" alt="check mark icon" class="img-fluid">
-                            </div>
-                            <p class="text-start">12+ keywords in the top 10 within 4 months</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-2">
+                <img src="assets/images/location.png" alt="location Icon" class="img-fluid">
+              </div>
+              <div class="col-10">
+                <h3>
+                  Office
+                </h3>
+                <p class="">
+                  Visit our office:
+                </p>
+                <p class="">
+                  123 Market Street, Suite 201 <br> Creative City, NY 10001
+                </p>
+                <p class="">
+                  Feel free to stop by or schedule a visit.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section pt-3 pb-0">
-        <div class="container-fluid p-lg-5">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-lg-10" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h2 class="mb-4 header">From Frustration to Full Calendars: Real Clients. Real Growth.</h2>
-                    <p class="paragraph">We don’t just promise results — we deliver them. Hear from paving and construction company owners who trusted us to take their marketing to the next level, and are now booking more jobs, seeing higher ROI, and finally getting the leads they deserve.</p>
-                </div>
-            </div>
-            <div class="col-12">
-                <!-- Swiper -->
-                <div class="swiper clients_swipper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide m-lg-3 m-2">
-                            <div class="testimonial-card border">
-                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
-                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                                <div class="author-info">
-                                    <p class="author-name mb-0">Derrick Malone</p>
-                                    <p class="author-title">CEO at Wright Construction Services</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide m-lg-3 m-2">
-                            <div class="testimonial-card border">
-                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
-                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                                <div class="author-info">
-                                    <p class="author-name mb-0">Derrick Malone</p>
-                                    <p class="author-title">CEO at Wright Construction Services</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide m-lg-3 m-2">
-                            <div class="testimonial-card border">
-                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
-                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                                <div class="author-info">
-                                    <p class="author-name mb-0">Derrick Malone</p>
-                                    <p class="author-title">CEO at Wright Construction Services</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide m-lg-3 m-2">
-                            <div class="testimonial-card border">
-                                <div class="quote-icon"><img src="assets/images/Stars.png" alt="Stars Icon"></div>
-                                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                                <div class="author-info">
-                                    <p class="author-name mb-0">Derrick Malone</p>
-                                    <p class="author-title">CEO at Wright Construction Services</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination d-none"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- New Testimonial Section (Video Testimonials) -->
-    <section class="video-testimonial-section pb-3 pt-0">
-        <div class="container pb-5 pt-0">
-            <div id="videoTestimonialCarousel" class="carousel slide video-testimonial-carousel" data-bs-ride="carousel" data-bs-interval="false">
-                <div class="carousel-inner" data-aos="zoom-in-up" data-aos-delay="100">
-                    <!-- Testimonial 1 -->
-                    <div class="carousel-item active">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="video-placeholder rounded-4 overflow-hidden shadow-sm">
-                                    <img src="https://placehold.co/600x400/CCCCCC/666666?text=Play+Video" alt="Video Testimonial Placeholder" class="img-fluid">
-                                    <div class="play-button"><i class="fas fa-play-circle"></i></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center text-md-start">
-                                <div class="stars mb-3">
-                                    <img src="assets/images/Stars.png" alt="Rating Stars" class="img-fluid">
-                                </div>
-                                <p class="quote-text mb-4">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
-                                <div class="d-flex gap-2">
-                                    <div style="border-right: 2px solid #211D1E;" class="pe-3">
-                                        <h5 class="author-name mb-1">Emily Johnson</h5>
-                                        <p class="author-title mb-0">Marketing Director, Global Corp</p>
-                                    </div>
-                                    <div class="align-self-center">
-                                        <img src="assets/images/industry2-logo.png" alt="Company Logo" class="img-fluid company-logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 (Duplicate for carousel effect) -->
-                    <div class="carousel-item">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-md-6 mb-4 mb-md-0">
-                                <div class="video-placeholder rounded-4 overflow-hidden shadow-sm">
-                                    <img src="https://placehold.co/600x400/AAAAAA/333333?text=Play+Video+2" alt="Video Testimonial Placeholder" class="img-fluid">
-                                    <div class="play-button"><i class="fas fa-play-circle"></i></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center text-md-start">
-                                <div class="stars mb-3">
-                                    <img src="assets/images/Stars.png" alt="Rating Stars" class="img-fluid">
-                                </div>
-                                <p class="quote-text mb-4">"Working with Miost Marketing has been a game-changer for our business. Their strategic insights and execution are truly exceptional!"</p>
-                                <div class="d-flex gap-2">
-                                    <div style="border-right: 2px solid #211D1E;" class="pe-3">
-                                        <h5 class="author-name mb-1">Emily Johnson</h5>
-                                        <p class="author-title mb-0">Marketing Director, Global Corp</p>
-                                    </div>
-                                    <div class="align-self-center">
-                                        <img src="assets/images/industry2-logo.png" alt="Company Logo" class="img-fluid company-logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev d-none" type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next d-none" type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <!-- Carousel Indicators -->
-                <div class="carousel-indicators d-none">
-                    <button type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#videoTestimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- services icons -->
-    <section class="testimonial-section pt-3 pb-0">
-        <div class="container pt-5 pb-0">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-lg-10" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h2 class="mb-4 header text-center">Services Included</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="assets/images/branding.png" alt="branding icon" class="img-fluid">
-                    <p class="mb-0 mt-3 services_icons_title">Branding & Identity</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="assets/images/web_design.png" alt="dollar sign icon" class="img-fluid">
-                    <p class="mb-0 mt-3 services_icons_title">Website Design & Development</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="assets/images/google_ads.png" alt="google ads icon" class="img-fluid">
-                    <p class="mb-0 mt-3 services_icons_title">Google Ads Setup & Management</p>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <img src="assets/images/seo.png" alt="seo icon" class="img-fluid">
-                    <p class="mb-0 mt-3 services_icons_title">SEO & Content Optimization</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="results-section py-3">
-        <div class="container-fluid p-lg-5">
-            <div class="row">
-                <div class="col-lg-6 mb-5 top-header" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="px-lg-4">
-                        <h2 class="mb-4 text-start">The Outcome</h2>
-                        <p class="text-start description_text">More visibility. Better leads. A brand they’re proud of.</p>
-                        <p class="text-start mt-4">This project is a clear example of how a unified marketing strategy can drive real, measurable growth — and leave a lasting impression.</p>
-                        <div class="text-start mt-4">
-                            <button type="button" class="btn btn-warning btn-lg rounded-pill px-5 py-3 me-3 mb-3 mb-lg-0">Let’s Get Started <i class="fas fa-arrow-right ms-2"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="assets/images/Placeholder_Image.png" class="img-fluid" alt="placeholder image" data-aos="zoom-in-up" data-aos-delay="100">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- FAQ Section -->
     <section class="faq-section py-3">
-        <div class="container-fluid p-lg-5">
+        <div class="container py-5">
             <div class="row justify-content-center text-center mb-5">
                 <div class="col-lg-8" data-aos="zoom-in-up" data-aos-delay="100">
                     <h2 class="header mb-4">Got Questions? We’ve Got Answers.</h2>
@@ -540,7 +381,6 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="footer-new" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="container-fluid px-lg-5">
@@ -600,7 +440,7 @@
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Swipper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Initialize Swiper -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
     <script>
@@ -612,73 +452,14 @@
         }
       });
     </script>
-    <script>
-      // Auto-scroll backwards (left to right)
-      const videoTestimonialCarousel = document.querySelector('#videoTestimonialCarousel');
-      const bsCarouse3 = new bootstrap.Carousel(videoTestimonialCarousel, {
-        interval: false,
-        ride: false,
-        pause: true,
-        wrap: true
-      });
-      // setInterval(() => {
-      //   bsCarouse3.prev(); // Go to previous slide
-      // }, 3000); // 3 seconds
-    </script>
+
 
     <script>
-      // Auto-scroll backwards (left to right)
-      const testimonialCarousel = document.querySelector('#testimonialCarousel');
-      const videoTestimonialCarousel = document.querySelector('#videoTestimonialCarousel');
-
-      const bsCarouse2 = new bootstrap.Carousel(testimonialCarousel, {
-        interval: false,
-        ride: false,
-        pause: false,
-        wrap: true
-      });
-      setInterval(() => {
-        bsCarouse2.prev(); // Go to previous slide
-      }, 3000); // 3 seconds
-
-      const bsCarouse3 = new bootstrap.Carousel(videoTestimonialCarousel, {
-        interval: false,
-        ride: false,
-        pause: true,
-        wrap: true
-      });
-      // setInterval(() => {
-      //   bsCarouse3.prev(); // Go to previous slide
-      // }, 3000); // 3 seconds
-    </script>
-
-    <!-- show more services -->
-    <script>
-      $(document).ready(function () {
-        $('#toggleServices').click(function () {
-          $('.extra-services').stop().slideToggle(400);
-          let btn = $(this);
-          btn.text(btn.text() === 'More Services' ? 'Show Less' : 'More Services');
-        });
+      $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        alert("Your message has been sent!");
+        // You can later replace this with real AJAX call or form handler
       });
     </script>
-
-    <script>
-        const clients_swipper = new Swiper(".clients_swipper", {
-            slidesPerView: "auto",
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                reverseDirection: true, // RIGHT to LEFT
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
-
-    </body>
+  </body>
 </html>

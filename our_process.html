@@ -60,8 +60,8 @@
                       <a class="nav-link dropdown-toggle" href="why_us.html" id="whyUsDropdown" role="button">
                         Why Us
                       </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="gallery.html">Portfolio</a></li>
+                      <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item nav-link ps-lg-2 ps-5" href="gallery.html">Portfolio</a></li>
                       </ul>
                     </li>
                     <li class="nav-item dropdown position-static">
@@ -164,7 +164,7 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                 </ul>
-                <button class="btn btn-warning ms-lg-3 rounded-pill px-4 py-2 d-none d-lg-block">Book a Call <i class="fas fa-arrow-right ms-2"></i></button>
+                <button class="btn btn-warning ms-lg-3 rounded-pill px-4 py-2 d-none d-lg-block" onclick='location.href="contact.html"'>Book a Call <i class="fas fa-arrow-right ms-2"></i></button>
             </div>
         </div>
     </nav>
@@ -455,34 +455,6 @@
       });
     </script>
 
-    <script>
-        // script.js - Embedded Script
-
-        $(document).ready(function() {
-
-            // Smooth scrolling for navigation links (optional)
-            $('a.nav-link[href^="#"]').on('click', function(event) {
-                var target = $(this.hash);
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - $('.navbar').outerHeight() // Adjust for fixed navbar height
-                    }, 800);
-                }
-            });
-
-            // Add shadow to navbar on scroll (optional, but common for transparent navbars)
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 50) { // If scrolled more than 50px
-                    $('.navbar').css('background-color', '#fff'); // Darker background
-                    $('.navbar').addClass('shadow-sm'); // Add shadow
-                } else {
-                    $('.navbar').css('background-color', '#fff'); // Original transparent background
-                    $('.navbar').removeClass('shadow-sm'); // Remove shadow
-                }
-            });
-        });
-    </script>
     <script>
       // Auto-scroll backwards (left to right)
       const carousel = document.querySelector('#vendorsCarousel');
