@@ -170,7 +170,7 @@
         </div>
     </nav>
 
-    <section class="contact">
+    <section class="contact" data-aos="zoom-in-up" data-aos-delay="100">
       <div class="container-fluid px-lg-5 contact-section">
         <div class="row g-5 align-items-center">
           <!-- Left Side -->
@@ -234,7 +234,7 @@
       </div>
     </section>
 
-    <section class="py-5 location">
+    <section class="py-5 location" data-aos="zoom-in-up" data-aos-delay="100">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -443,17 +443,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <!-- scripts -->
     <script src="assets/js/scripts.js"></script>
-    <script>
-      AOS.init({
-        duration: 800, // animation duration in ms
-        once: false, // whether animation should happen only once
-        disable: function () {
-            return window.innerWidth < 768; // Disable below 768px
-        }
-      });
-    </script>
-
-
     <script>
       $('#contactForm').on('submit', function(e) {
         e.preventDefault();

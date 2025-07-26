@@ -15,46 +15,6 @@ $('#backToTop').on("click", function () {
 
 // show menu on mobile view 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Detect if it's a touch device (mobile)
-//     if ('ontouchstart' in document.documentElement) {
-//       const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
-
-//       dropdownLinks.forEach(link => {
-//         let tapped = false;
-
-//         link.addEventListener('click', function (e) {
-//           const parent = link.parentElement;
-//           const submenu = parent.querySelector('.dropdown-menu, .dropdown-mega');
-
-//           // If the submenu exists and is hidden
-//           if (submenu && !submenu.classList.contains('show')) {
-//             e.preventDefault(); // Prevent the navigation
-//             // Close any other open dropdowns
-//             document.querySelectorAll('.navbar .dropdown .dropdown-menu.show, .dropdown-mega.show').forEach(menu => {
-//               menu.classList.remove('show');
-//             });
-//             submenu.classList.add('show');
-//             tapped = true;
-//           } else if (tapped) {
-//             // Allow navigation on second tap
-//             window.location = link.href;
-//           }
-//         });
-
-//         // Close dropdown if clicking outside
-//         document.addEventListener('click', function (event) {
-//           if (!link.contains(event.target) && !parent.contains(event.target)) {
-//             const submenu = parent.querySelector('.dropdown-menu, .dropdown-mega');
-//             if (submenu) submenu.classList.remove('show');
-//             tapped = false;
-//           }
-//         });
-//       });
-//     }
-// });
-
-
 $(document).ready(function () {
     // Check if it's a touch device (mobile)
     if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
@@ -87,8 +47,6 @@ $(document).ready(function () {
     }
 });
 
-
-
 // Smooth scrolling for navigation links (optional)
 $(document).ready(function() {
 
@@ -115,3 +73,11 @@ $(document).ready(function() {
     });
 });
 
+// animate elements on scroll
+AOS.init({
+    duration: 800, // animation duration in ms
+    once: false, // whether animation should happen only once
+    // disable: function () {
+    //     return window.innerWidth < 768; // Disable below 768px
+    // }
+});
