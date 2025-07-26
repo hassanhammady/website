@@ -2022,7 +2022,6 @@ h1, h2, h3, h4, h5, h6 {
     .hero-section p {
         font-size: 18px;
     }
-
     .hero-section .btn-lg {
         padding: 10px 30px !important;
         font-size: 1rem !important;
@@ -2086,27 +2085,22 @@ h1, h2, h3, h4, h5, h6 {
     .modalName {
         font-size: 28px;
     }
-    
-
     .modal .accordion-button {
         font-size: 18px;
     }
     .navbar-nav .nav-link {
         padding: 10px 15px;
     }
-
     .navbar .btn {
         width: 100%;
         margin-top: 15px;
     }
-
     .modalName {
         font-weight: 700;
         font-size: 28px;
         line-height: 120%;
         color: #FEFEFE;
     }
-
     .hero-section {
         /* padding: 80px 0; */
     }
@@ -2116,7 +2110,6 @@ h1, h2, h3, h4, h5, h6 {
     .why-fall-short-section .reason-item:not(:last-child) .reason-number::after {
         height: calc(100% + 35vh);
     }
-
     .parallax-section {
         padding: 60px 0;
     }
@@ -2136,57 +2129,49 @@ h1, h2, h3, h4, h5, h6 {
     .faq-section {
         padding: 40px 0;
     }
-
     .hero-section .btn {
         margin-bottom: 15px;
         margin-right: 0 !important;
     }
-
     .footer-new .footer-bottom-bar .col-md-6 {
         text-align: center !important;
         margin-top: 15px;
     }
-
     .testimonial-carousel .carousel-item .col-md-6.col-lg-4,
     .video-testimonial-carousel .carousel-item .col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .pricing-table th,
     .pricing-table td {
         font-size: 14px;
         padding: 12px;
     }
-
     .pricing-navpills .nav-pills {
         flex-direction: row !important;
         overflow-x: auto;
     }
-
     .pricing-navpills .nav-pills .nav-link {
         white-space: nowrap;
         border-left: none !important;
         border-bottom: 2px solid transparent;
     }
-
     .pricing-navpills .nav-pills .nav-link.active {
         border-bottom: 2px solid #F8941D;
     }
-
     .gellery .filter-btns .btn {
         width: 100%;
     }
-
     .w-75 {
         width: 100% !important;
     }
-
+    .pricing-navpills .nav-pills .nav-item {
+        width: 100%;
+    }
     .vendors_swipper .swiper-slide,
     .clients_swipper .swiper-slide {
         width: 95%;
     }
-
     .pricing-navpills .nav-pills .nav-item {
         width: 100%;
     }
@@ -2199,30 +2184,24 @@ h1, h2, h3, h4, h5, h6 {
     .footer-image-col {
         margin-bottom: 30px;
     }
-
     .footer-new .footer-nav {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
-
     .footer-new .footer-nav .nav-item {
         margin-bottom: 10px;
     }
-
     .footer-new .social-icons {
         margin-top: 20px;
         text-align: center;
     }
-
     .footer-new .social-icons a {
         margin: 0 10px;
     }
-
     .footer-new .footer-bottom-bar .col-md-6 {
         text-align: center !important;
     }
-
     .footer-new .footer-bottom-bar a {
         margin: 0 10px;
         display: block;
@@ -2269,21 +2248,25 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-
 /* === From 521px to 768px === */
 @media (min-width: 520px) and (max-width: 768px) {
     .hero-section {
         /* padding: 80px 0; */
     }
-
+    .footer-new .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .hero-section p {
+        font-size: 24px;
+    }
     .why-fall-short-section .reason-item:not(:last-child) .reason-number::after {
         height: calc(100% + 35vh);
     }
-
     .parallax-section {
         padding: 60px 0;
     }
-
     .what-we-manufacture,
     .our-benefits,
     .our-projects,
@@ -2291,69 +2274,70 @@ h1, h2, h3, h4, h5, h6 {
     .faq-section {
         padding: 40px 0;
     }
-
     .hero-section .btn {
         margin-bottom: 15px;
         margin-right: 0 !important;
     }
-
     .footer-new .footer-bottom-bar .col-md-6 {
         text-align: center !important;
         margin-top: 15px;
     }
-
     .testimonial-carousel .carousel-item .col-md-6.col-lg-4,
     .video-testimonial-carousel .carousel-item .col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
     .pricing-table th,
     .pricing-table td {
         font-size: 14px;
         padding: 12px;
     }
-
     .pricing-navpills .nav-pills {
         flex-direction: row !important;
         overflow-x: auto;
     }
-
     .pricing-navpills .nav-pills .nav-link {
         white-space: nowrap;
         border-left: none !important;
         border-bottom: 2px solid transparent;
     }
-
     .pricing-navpills .nav-pills .nav-link.active {
         border-bottom: 2px solid #F8941D;
     }
-
     .gellery .filter-btns .btn {
         width: 100%;
     }
-
     .w-75 {
         width: 100% !important;
     }
-
     .vendors_swipper .swiper-slide,
     .clients_swipper .swiper-slide,
     .clients_swipper-onecard .swiper-slide {
         width: 95%;
     }
-
-    .hero-section h1 {
-        font-size: 2.5rem;
+    .hero-section h1,
+    .ornage-font {
+        font-size: 42px;
     }
-
-    .hero-section p {
-        font-size: 1rem;
-    }
-
     .hero-section .btn-lg {
         padding: 10px 30px !important;
-        font-size: 1rem !important;
+        font-size: 20px !important;
+    }
+    .modal-dialog {
+        max-width: 700px;
+    }
+    .icon-wrapper img {
+        max-width: 50%;
+    }
+    .pricing-navpills .nav-pills .nav-item {
+        width: 100%;
+    }
+    .vendors_swipper .swiper-slide, .clients_swipper .swiper-slide, .clients_swipper-onecard .swiper-slide {
+        width: 45%;
+    }
+    .blog_category_wrapper,
+    .contact .highlight-badge {
+        font-size: 16px;
     }
 }
 
@@ -2365,47 +2349,37 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: 10px;
         padding: 15px;
     }
-
     .navbar-nav .nav-link {
         padding: 10px 15px;
     }
-
     .navbar .btn {
         width: 100%;
         margin-top: 15px;
     }
-
     .footer-image-col {
         margin-bottom: 30px;
     }
-
     .footer-new .footer-nav {
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
     }
-
     .footer-new .footer-nav .nav-item {
         margin-bottom: 10px;
     }
-
     .footer-new .social-icons {
         margin-top: 20px;
         text-align: center;
     }
-
     .footer-new .social-icons a {
         margin: 0 10px;
     }
-
     .footer-new .footer-bottom-bar .col-md-6 {
         text-align: center !important;
     }
-
     .footer-new .footer-bottom-bar a {
         margin: 0 10px;
     }
-
     .dropdown-mega {
         position: static;
         flex-direction: column;
@@ -2413,22 +2387,23 @@ h1, h2, h3, h4, h5, h6 {
         overflow: scroll;
         height: 70vh;
     }
-
     .case-study {
         border: none;
         padding: 0;
         margin-top: 1rem;
     }
-
     .dropdown-mega .case-study {
         border-left: unset;
+    }
+    .modal-dialog {
+        max-width: 700px;
     }
 }
 
 
 /* === From 993px to 1200px === */
 @media (min-width: 993px) and (max-width: 1199.98px) {
-    /* Empty for now */
+
 }
 
 
