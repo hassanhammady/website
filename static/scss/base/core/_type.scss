@@ -1,0 +1,206 @@
+// Type display classes
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+	color: $px-headings-color;
+  letter-spacing: -.02em;
+	.white-text & {
+		color: $px-headings-color-light;
+	}
+}
+h1,
+.h1 {
+  margin-bottom: $px-display-margin-bottom - 0.5rem;
+}
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  @include media-breakpoint-up(md) {
+    margin-bottom: $px-display-margin-bottom;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+color: $px-headings-color;
+font-weight: $px-font-weight-bold;
+letter-spacing: -.02em;
+	.text-white & {
+		color: $px-headings-color-light;
+	}
+}
+
+.white-link {
+  a {
+	color: $px-light-link-color;
+	&:hover {
+	  color: $px-light-link-color-hover;
+	}
+  }
+}
+
+.dark-link {
+  a {
+  color: $px-dark-link-color;
+  &:hover {
+    color: $px-dark-link-color-hover;
+  }
+  }
+}
+
+.link-overlay {
+ 	&:after {
+		content:"";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+ 	}
+}
+
+mark,
+.mark {
+	color: inherit;
+	padding: 0;
+	background: 0 0;
+	background-image: $px-mark-bg;
+	background-repeat: no-repeat;
+	background-size: 100% .3em;
+	background-position: 0 80%;
+	position: relative;
+}
+
+
+.line-height {
+  line-height: 1.5;
+}
+
+@include media-breakpoint-down(md) {
+    .lead {
+        font-size: 1rem; 
+    }
+}
+
+/*// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 { @include font-size($h1-font-size); }
+h2, .h2 { @include font-size($h2-font-size); }
+h3, .h3 { @include font-size($h3-font-size); }
+h4, .h4 { @include font-size($h4-font-size); }
+h5, .h5 { @include font-size($h5-font-size); }
+h6, .h6 { @include font-size($h6-font-size); }
+
+.lead {
+  @include font-size($lead-font-size);
+  font-weight: $lead-font-weight;
+}
+
+// Type display classes
+.display-1 {
+  @include font-size($display1-size);
+  font-weight: $display1-weight;
+  line-height: $display-line-height;
+}
+.display-2 {
+  @include font-size($display2-size);
+  font-weight: $display2-weight;
+  line-height: $display-line-height;
+}
+.display-3 {
+  @include font-size($display3-size);
+  font-weight: $display3-weight;
+  line-height: $display-line-height;
+}
+.display-4 {
+  @include font-size($display4-size);
+  font-weight: $display4-weight;
+  line-height: $display-line-height;
+}
+
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: $hr-margin-y;
+  margin-bottom: $hr-margin-y;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+
+//
+// Emphasis
+//
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-normal;
+}
+
+
+//
+// Lists
+//
+
+.list-unstyled {
+  @include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled();
+}
+.list-inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+	margin-right: $list-inline-padding;
+  }
+}
+
+
+//
+// Misc
+//
+
+// Builds on `abbr`
+.initialism {
+  @include font-size(90%);
+  text-transform: uppercase;
+}
+
+// Blockquotes
+.blockquote {
+  margin-bottom: $spacer;
+  @include font-size($blockquote-font-size);
+}
+
+.blockquote-footer {
+  display: block;
+  @include font-size($blockquote-small-font-size);
+  color: $blockquote-small-color;
+
+  &::before {
+	content: "\2014\00A0"; // em dash, nbsp
+  }
+}
+*/

@@ -1,0 +1,14 @@
+@mixin icon-variant($bg) {
+  color: px-color-yiq($bg);
+  background-color: $bg;
+}
+
+@mixin icon-variant-hover($bg) {
+  color: px-color-yiq($bg);
+  background-color: darken($bg, 10%);
+}
+
+@mixin icon-variant-light($bg, $text) {
+  color: $text;
+  background-color: $bg;
+}

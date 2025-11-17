@@ -1,0 +1,53 @@
+.effect-section {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	.svg-bottom {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  pointer-events: none;
+	  @include media-breakpoint-down(md) {
+	  	svg {
+	  		height: 40px;
+	  	}
+	  }
+	}
+	.svg-top {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  pointer-events: none;
+	}
+	.svg-style-top-right {
+		position: absolute;
+		top: -5vw;
+		right: -5vw;
+		width: 30vw;
+		height: 30vw;
+	}
+	.svg-style-bottom-left {
+		position: absolute;
+		bottom: -5vw;
+		left: -5vw;
+		width: 25vw;
+		height: 25vw;
+		pointer-events: none;
+		z-index: -1;
+	}
+}
+
+
+
+@include media-breakpoint-up(lg) {
+	.sticky-lg-top {
+	    position: sticky;
+	    top: 0;
+	    z-index: 1020;
+	}
+	.sticky-lg-top-header {
+		top: 100px;
+	}
+}

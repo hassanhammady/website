@@ -1,0 +1,26 @@
+.btn {
+	&.rounded-circle {
+		padding: 0;
+		width: 3rem;
+		height: 3rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		&.btn-lg {
+			width: 4rem;
+			height: 4rem;
+		}
+		&.btn-sm {
+		    width: 2.25rem;
+			height: 2.25rem;
+		}
+	}
+	.btn--text {
+		&:not(:last-child) {
+			margin-right: .75em;
+		}
+		&:not(:first-child) {
+			margin-left: .75em;
+		}
+	}
+}

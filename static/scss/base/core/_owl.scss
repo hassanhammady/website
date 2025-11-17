@@ -1,0 +1,32 @@
+.owl-carousel {
+	.owl-item{
+		img {
+			width: auto;
+		}
+	}
+}
+
+.owl-dots {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	.owl-dot {
+		margin: 0 3px;
+		font-size: 0;
+		span {
+			width: 10px;
+			height: 10px;
+			border: 2px solid $px-dark;
+			display: inline-block;
+			vertical-align: top;
+			border-radius: 50%;
+		}
+		&.active {
+			span {
+				background: $px-dark;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+// Hover top
+.hover-top {
+	transition: ease-in-out all 0.35s;
+    position: relative;
+    top: 0;
+    &:hover {
+    	top: -10px;
+    }
+}
+
+// Hover shadow
+.shadow-hover {
+    box-shadow: $px-box-shadow;
+	transition: ease all 0.35s;
+    &:hover {
+        box-shadow: $box-shadow-lg;
+    }
+}
+
+.shadow-only-hover {
+	transition: ease all 0.35s;
+    &:hover {
+        box-shadow: $box-shadow-lg;
+    }
+}
