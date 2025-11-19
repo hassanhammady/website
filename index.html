@@ -10,18 +10,34 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- CSS Template -->
     <link href="static/css/style.css" rel="stylesheet">
+    <style>
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .play-btn:hover {
+            background: rgba(0,0,0,0.8);
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Skippy -->
-    <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
-        <div class="container">
-            <span class="u-skiplink-text">Skip to main content</span>
-        </div>
-    </a>
-    <!-- End Skippy -->
     <!-- Preload -->
     <div id="loading" class="preloader">
         <div class="spinner-border text-primary" role="status">
@@ -30,7 +46,7 @@
     </div>
     <!-- End Preload -->
     <!-- Header -->
-    <header class="header-main header-light fixed-top">
+    <header class="header-main header-light fixed-top bg-white">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Logo -->
@@ -50,16 +66,16 @@
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about-us.html" class="nav-link">About</a>
+                            <a href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="impact.html" class="nav-link">Impact</a>
+                            <a href="#impact" class="nav-link">Impact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Get Involved</a>
+                            <a href="#get-involved" class="nav-link">Get Involved</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact-us.html" class="nav-link"> Contact Us</a>
+                            <a href="#contact" class="nav-link"> Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +87,7 @@
     <!-- Main -->
     <main>
         <!-- Home Banner -->
-        <section class="effect-section pt-9">
+        <section class="effect-section pt-9 section bg-dark">
             <div class="svg-style-top-right opacity-1">
                 <img src="static/img/effect/style-1.svg" title="" alt="" class="svg_img text-primary">
             </div>
@@ -81,33 +97,297 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center pt-9 mt-9">
                     <div class="col-lg-9 col-xl-11 text-center pb-9">
-                        <h2 class="display-3">
+                        <h2 class="display-3 text-white">
                             Empowering <mark>Kids</mark> through education — one backpack at a time.
                         </h2>
-                        <p class="lead">Supplies for Smiles is a student-led initiative raising funds and collecting school supplies for shelters and under-resourced schools in Pakistan.</p>
+                        <p class=" text-white">Supplies for Smiles is a student-led initiative raising funds and collecting school supplies for shelters and under-resourced schools in Pakistan.</p>
                         <div class="pt-2">
                             <a class="btn btn-primary" href="#">Donate</a>
                             <a class="btn btn-outline-primary ms-3" href="#">Get Involved</a>
                         </div>
                     </div>
+                    <!-- Placeholder with Play Button -->
                     <div class="col-lg-10 text-center">
-                        <div class="laptop-screen">
+                        <div class="laptop-screen position-relative">
                             <div class="laptop-screen-inner">
                                 <div class="ratio ratio-16x9">
-                                    <video controls playsinline>
-                                        <source src="static/video/video.mp4" type="video/mp4">
-                                        <source src="static/video/video.mov" type="video/quicktime">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <img class="img-fluid" src="static/img/about5.jpeg" alt="Laptop Frame">
+
+                                    <!-- Play Button Overlay -->
+                                    <a class="video-popup play-btn" 
+                                       href="static/video/video.mp4"
+                                       title="Play Video">
+                                        <i class="fas fa-play"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="static/img/effect/laptop.svg" title="" alt="Laptop Frame">
+                            <img class="img-fluid" src="static/img/effect/laptop.svg" alt="Laptop Frame">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Home Banner -->
+        <!-- section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-6 col-xl-5">
+                        <!-- <span class="badge bg-primary badge-pill mb-4">About Us</span> -->
+                        <h2 class="h1 mb-4">About us</h2>
+                        <p class="lead">Founded in 2024 by a 16-year-old student from New York, our goal is to give every child the confidence and tools to learn.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid rounded mb-2" src="static/img/about6.jpeg" title="" alt="">
+                                <img class="img-fluid rounded" src="static/img/about2.jpeg" title="" alt="">
+                            </div>
+                            <div class="col-6 pt-8">
+                                <img class="img-fluid rounded mb-2" src="static/img/about3.jpeg" title="" alt="">
+                                <img class="img-fluid rounded" src="static/img/about4.jpeg" title="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+        <!-- section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h3 class="h1 mb-4">How We Work</h3>
+                    </div>
+                    <div class="col-12 col-md-3 my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon icon-lg icon-warning-light rounded-circle mb-4">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h5>Fundraising</h5>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon icon-lg icon-info-light rounded-circle mb-4">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h5>Purchasing supplies locally</h5>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon icon-lg icon-success-light rounded-circle mb-4">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <h5>Delivering to schools</h5>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon icon-lg icon-danger-light rounded-circle mb-4">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h5>Sharing updates</h5>
+                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+        <!-- section -->
+        <section class="section bg-gray-100">
+            <div class="container">
+                <div class="row justify-content-center section-heading">
+                    <div class="col-lg-9 col-xl-11 text-center">
+                        <h2 class="h1">Mission Statement</h2>
+                        <div class="lead">Our mission is to provide school supplies-which we consider as essentials in the US-to underprivileged children in shelters in Pakistan. I decided to start this project to give back to my community in Pakistan. Growing up visiting my parents home country, l've seen necessities taken for granted in the US be considered luxuries in Pakistan. I believe that education should be a right for everyone, and access to school supplies is essential to enable learning. That's why we raise money to fund necessary school supplies for this shelter to create opportunities and promote their learning - Meshu Malik</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+        <section class="section" id="impact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <img src="static/img/map.png" class="img-fluid w-100" alt="map of Pakistan with Islamabad marked">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Page section -->
+        <section class="py-8 counter bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4 text-center my-3 text-white">
+                        <h6 class="count h1 mb-2" data-to="100" data-speed="100">100</h6>
+                        <p class="m-0">Number of students helped</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 text-center my-3 text-white">
+                        <h6 class="count h1 mb-2" data-to="2" data-speed="2">2</h6>
+                        <p class="m-0">Schools/shelters supported</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 text-center my-3 text-white">
+                        <h6 class="count h1 mb-2 d-inline" data-to="2000" data-speed="2000">2000</h6> <span class="h1">$</span>
+                        <p class="m-0">Funds raised</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="involved-section" id="get-involved">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-6">Get Involved & Make an Impact</h2>
+                    <p class="text-muted fs-5">Your support helps us change lives. Choose how you want to participate.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Donate Card -->
+                    <div class="col-md-4">
+                        <div class="involved-card text-center">
+                            <h5>Donate</h5>
+                            <p class="text-muted mb-4">Support our mission through secure online donations.</p>
+
+                            <a href="#" class="btn btn-primary donate-btn w-100 mb-2">GoFundMe (Coming Soon)</a>
+                            <a href="#" class="btn btn-warning donate-btn w-100 mb-2">PayPal (Coming Soon)</a>
+                            <a href="#" class="btn btn-dark donate-btn w-100">Stripe (Coming Soon)</a>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer / Partner Card -->
+                    <div class="col-md-4">
+                        <div class="involved-card text-center">
+                            <h5>Join Us</h5>
+                            <p class="text-muted mb-4">Become a volunteer, partner, or sponsor a child.</p>
+
+                            <a href="#" class="btn btn-success donate-btn w-100">Form Placeholder</a>
+                        </div>
+                    </div>
+
+                    <!-- Social & QR Card -->
+                    <div class="col-md-4">
+                        <div class="involved-card text-center">
+                            <h5>Stay Connected</h5>
+                            <p class="text-muted mb-4">Follow our updates and join our online community.</p>
+
+                            <!-- Social Icons -->
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="social-icon-modern">
+                                    <a href="" style="color: unset;">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon-modern">
+                                    <a href="" style="color: unset;">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="social-icon-modern">
+                                    <a href="" style="color: unset;">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- QR Placeholder -->
+                            <div class="qr-modern">QR CODE</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section -->
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="row section-heading">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 mt-3">Get in touch</h2>
+                        <p class="lead m-0">Feel free to reach out to us with any questions or inquiries. We're here to help.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-6 mb-lg-0">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Your Name</label>
+                                        <input id="contact-name" type="text" name="name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Your Email</label>
+                                        <input id="contact-email" type="email" name="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Subject</label>
+                                        <input id="contact-subject" type="text" name="subject" placeholder="Subject" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Message</label>
+                                        <textarea class="form-control" id="contact-message" name="message" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="submit" name="send">Write to us</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 ms-auto">
+                        <h5 class="m-20px-b body-color">Reach out now!</h5>
+                        <div class="h1 theme-color"></div>
+                        <div class="media align-items-center py-2 py-lg-3">
+                            <div class="icon icon-primary-light rounded-circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="media-body ps-3">
+                                <h6 class="h4 m-0">
+                                    <a href="tel:+123457899" class="text-dark">+123 45 7899</a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="media align-items-center py-2 py-lg-3">
+                            <div class="icon icon-primary-light rounded-circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="media-body ps-3">
+                                <h6 class="h4 m-0">
+                                    <a href="mailto:suppliesforsmiles@gmail.com" class="text-dark">suppliesforsmiles@gmail.com</a>
+                                </h6>
+                            </div>
+                        </div>
+                        <p class="m-0">We will come back to you in 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <!-- End Main -->
     <!-- Footer -->
@@ -124,13 +404,10 @@
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                             <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
-                                <i class="fab fa-twitter"></i>
+                                <i class="fa-brands fa-x-twitter"></i>
                             </a>
                             <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
                                 <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
-                                <i class="fab fa-linkedin-in"></i>
                             </a>
                         </div>
                     </div>
@@ -234,6 +511,21 @@
     <script src="static/vendor/jarallax/jarallax-all.js"></script>
     <!-- Theme Js -->
     <script src="static/js/custom.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('.video-popup').magnificPopup({
+            type: 'iframe',
+            iframe: {
+                markup:
+                    '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                    '</div>'
+            }
+        });
+    });
+</script>
+
 </body>
 <!-- end body -->
 
