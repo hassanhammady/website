@@ -14,28 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- CSS Template -->
     <link href="static/css/style.css" rel="stylesheet">
-    <style>
-        .play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: rgba(0,0,0,0.6);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            color: #fff;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .play-btn:hover {
-            background: rgba(0,0,0,0.8);
-        }
-    </style>
 </head>
 <body>
     <!-- Preload -->
@@ -131,23 +109,37 @@
         <!-- section -->
         <section class="section" id="about">
             <div class="container">
-                <div class="row align-items-center justify-content-around">
-                    <div class="col-lg-6 col-xl-5">
+                <div class="row justify-content-around">
+                    <div class="col-lg-6 col-xl-5 mb-lg-5">
                         <!-- <span class="badge bg-primary badge-pill mb-4">About Us</span> -->
                         <h2 class="h1 mb-4">About us</h2>
                         <p class="lead">Founded in 2024 by a 16-year-old student from New York, our goal is to give every child the confidence and tools to learn.</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-lg-5">
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid rounded mb-2" src="static/img/about6.jpeg" title="" alt="">
+                                <img class="img-fluid rounded mb-2" src="static/img/about1.jpeg" title="" alt="">
                                 <img class="img-fluid rounded" src="static/img/about2.jpeg" title="" alt="">
                             </div>
                             <div class="col-6 pt-8">
                                 <img class="img-fluid rounded mb-2" src="static/img/about3.jpeg" title="" alt="">
-                                <img class="img-fluid rounded" src="static/img/about4.jpeg" title="" alt="">
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-5 mt-3 order-lg-1 order-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid rounded mb-2" src="static/img/about5.jpeg" title="" alt="">
+                                <img class="img-fluid rounded" src="static/img/about4.jpeg" title="" alt="">
+                            </div>
+                            <div class="col-6 pt-8">
+                                <img class="img-fluid rounded mb-2" src="static/img/about6.jpeg" title="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 mt-lg-5 mt-3 order-lg-2 order-1">
+                        <!-- <span class="badge bg-primary badge-pill mb-4">About Us</span> -->
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo magni ex quisquam voluptate repudiandae vel maxime veniam, culpa amet cum qui vitae doloremque dolore consequuntur, labore autem iste voluptas illo.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +147,7 @@
         <!-- End section -->
         <!-- section -->
         <section class="section">
-            <div class="container">
+            <div class="container-fluid px-lg-5">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h3 class="h1 mb-4">How We Work</h3>
@@ -186,7 +178,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="icon icon-lg icon-success-light rounded-circle mb-4">
-                                    <i class="fas fa-plane"></i>
+                                    <i class="fas fa-school"></i>
                                 </div>
                                 <h5>Delivering to schools</h5>
                                 <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -220,6 +212,7 @@
             </div>
         </section>
         <!-- End section -->
+        <!--
         <section class="section" id="impact">
             <div class="container">
                 <div class="row">
@@ -229,8 +222,9 @@
                 </div>
             </div>
         </section>
+        -->
         <!-- End Page section -->
-        <section class="py-8 counter bg-primary">
+        <section class="py-8 counter bg-primary" id="impact">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 text-center my-3 text-white">
@@ -242,61 +236,52 @@
                         <p class="m-0">Schools/shelters supported</p>
                     </div>
                     <div class="col-sm-6 col-lg-4 text-center my-3 text-white">
-                        <h6 class="count h1 mb-2 d-inline" data-to="2000" data-speed="2000">2000</h6> <span class="h1">$</span>
+                        <span class="h1">$</span> <h6 class="count h1 mb-2 d-inline" data-to="2000" data-speed="2000">2000</h6>
                         <p class="m-0">Funds raised</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="involved-section" id="get-involved">
             <div class="container">
-
                 <!-- Heading -->
                 <div class="text-center mb-5">
                     <h2 class="fw-bold display-6">Get Involved & Make an Impact</h2>
                     <p class="text-muted fs-5">Your support helps us change lives. Choose how you want to participate.</p>
                 </div>
-
                 <div class="row g-4">
-
                     <!-- Donate Card -->
                     <div class="col-md-4">
                         <div class="involved-card text-center">
                             <h5>Donate</h5>
                             <p class="text-muted mb-4">Support our mission through secure online donations.</p>
-
                             <a href="#" class="btn btn-primary donate-btn w-100 mb-2">GoFundMe (Coming Soon)</a>
+                            <!--
                             <a href="#" class="btn btn-warning donate-btn w-100 mb-2">PayPal (Coming Soon)</a>
                             <a href="#" class="btn btn-dark donate-btn w-100">Stripe (Coming Soon)</a>
+                            -->
                         </div>
                     </div>
-
                     <!-- Volunteer / Partner Card -->
                     <div class="col-md-4">
                         <div class="involved-card text-center">
                             <h5>Join Us</h5>
                             <p class="text-muted mb-4">Become a volunteer, partner, or sponsor a child.</p>
-
-                            <a href="#" class="btn btn-success donate-btn w-100">Form Placeholder</a>
+                            <!-- <a href="#" class="btn btn-success donate-btn w-100">Form Placeholder</a> -->
+                            <a href="javascript:void( window.open( 'https://form.jotform.com/253245770376058', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) " class="btn btn-success donate-btn w-100"> Supplies For Smiles Form </a>
                         </div>
                     </div>
-
                     <!-- Social & QR Card -->
                     <div class="col-md-4">
                         <div class="involved-card text-center">
                             <h5>Stay Connected</h5>
                             <p class="text-muted mb-4">Follow our updates and join our online community.</p>
-
                             <!-- Social Icons -->
                             <div class="d-flex justify-content-center mb-4">
                                 <div class="social-icon-modern">
                                     <a href="" style="color: unset;">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </div>
-                                <div class="social-icon-modern">
-                                    <a href="" style="color: unset;">
-                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <i class="fa-brands fa-tiktok"></i>
                                     </a>
                                 </div>
                                 <div class="social-icon-modern">
@@ -305,17 +290,15 @@
                                     </a>
                                 </div>
                             </div>
-
                             <!-- QR Placeholder -->
-                            <div class="qr-modern">QR CODE</div>
+                            <!-- <div class="qr-modern">QR CODE</div> -->
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-        <!-- section -->
 
+        <!-- section -->
         <section class="section" id="contact">
             <div class="container">
                 <div class="row section-heading">
@@ -326,6 +309,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-6 mb-lg-0">
+                        <!--
                         <form action="#">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -357,20 +341,27 @@
                                 </div>
                             </div>
                         </form>
+                        -->
+
+                        <iframe
+                          id="JotFormIFrame-253245770376058"
+                          title="Supplies For Smiles Form"
+                          onload="window.parent.scrollTo(0,0)"
+                          allowtransparency="true"
+                          allow="geolocation; microphone; camera; fullscreen; payment"
+                          src="https://form.jotform.com/253245770376058"
+                          frameborder="0"
+                          style="min-width:100%;max-width:100%;height:539px;border:none;"
+                          scrolling="no"
+                        >
+                        </iframe>
+                        <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+                        <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-253245770376058']", "https://form.jotform.com/")</script>
+    
+
                     </div>
                     <div class="col-lg-5 ms-auto">
                         <h5 class="m-20px-b body-color">Reach out now!</h5>
-                        <div class="h1 theme-color"></div>
-                        <div class="media align-items-center py-2 py-lg-3">
-                            <div class="icon icon-primary-light rounded-circle">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="media-body ps-3">
-                                <h6 class="h4 m-0">
-                                    <a href="tel:+123457899" class="text-dark">+123 45 7899</a>
-                                </h6>
-                            </div>
-                        </div>
                         <div class="media align-items-center py-2 py-lg-3">
                             <div class="icon icon-primary-light rounded-circle">
                                 <i class="fas fa-envelope"></i>
@@ -392,96 +383,6 @@
     <!-- End Main -->
     <!-- Footer -->
     <footer class="bg-dark footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 my-4">
-                        <div class="mb-4">
-                            <img src="static/img/logo-light.svg" title="" alt="">
-                        </div>
-                        <div class="nav">
-                            <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                            <a class="icon icon-sm icon-primary rounded-circle me-2" href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Useful</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Services</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Community</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-lg-2 my-4">
-                        <h5 class="text-white mb-3">Quick Links</h5>
-                        <ul class="list-unstyled white-link footer-links">
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-bottom footer-border">
             <div class="container">
                 <p class="m-0 text-white-50 text-center py-3">© 2025 copyright all right reserved</p>
